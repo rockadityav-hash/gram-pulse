@@ -7,7 +7,20 @@ export interface DB {query<T=Record<string,unknown>>(sql:string,params?:unknown[
 export const dataDir=path.resolve(process.env.DATA_DIR||'data');
 export async function connect():Promise<DB>{
  const connectionString=process.env.DATABASE_URL||process.env.POSTGRES_URL;
- if(connectionString){const pool=new pg.Pool({connectionString,options:'-c search_path=gram_pulse',max:process.env.VERCEL?3:10,idleTimeoutMillis:5000,connectionTimeoutMillis:10000});const wrap=(client:pg.Pool|pg.PoolClient):DB=>({query:async<T>(sql:string,params:unknown[]=[])=> (await client.query(sql,params)).rows as T[],transaction:async fn=>{const c=await pool.connect();try{await c.query('BEGIN');const result=await fn(wrap(c));await c.query('COMMIT');return result}catch(e){await c.query('ROLLBACK');throw e}finally{c.release()}},close:()=>pool.end()});return wrap(pool)}
+ if(connectionString){
+  const pool=new pg.Pool({connectionString,max:process.env.VERCEL?3:10,idleTimeoutMillis:5000,connectionTimeoutMillis:10000});
+  const transaction:DB['transaction']=async fn=>{
+   const client=await pool.connect();
+   try{
+    await client.query('BEGIN');
+    // Transaction-local settings work with Neon's transaction pooler.
+    await client.query('SET LOCAL search_path TO gram_pulse');
+    const tx:DB={query:async<T>(sql:string,params:unknown[]=[]) => (await client.query(sql,params)).rows as T[],transaction:fn=>fn(tx),close:async()=>{}};
+    const result=await fn(tx);await client.query('COMMIT');return result;
+   }catch(error){await client.query('ROLLBACK');throw error}finally{client.release()}
+  };
+  return {query:<T>(sql:string,params:unknown[]=[])=>transaction(tx=>tx.query<T>(sql,params)),transaction,close:()=>pool.end()};
+ }
  if(process.env.VERCEL)throw new Error('DATABASE_URL is required on Vercel; embedded storage is local-only.');
  await mkdir(dataDir,{recursive:true});const p=new PGlite(path.join(dataDir,'postgres'));await p.waitReady;
  const wrap=(client:Pick<PGlite,'query'>):DB=>({query:async<T>(sql:string,params:unknown[]=[])=> (await client.query<T>(sql,params)).rows,transaction:fn=>p.transaction(t=>fn(wrap(t))),close:()=>p.close()});return wrap(p);
