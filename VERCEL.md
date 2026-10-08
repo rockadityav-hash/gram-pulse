@@ -15,6 +15,8 @@ Images are privately served from PostgreSQL on Vercel. Local development keeps t
 
 Use a separate database for preview deployments. Builds apply additive schema migrations, so production and experimental branches should not share databases accidentally. The two included migrations preserve existing rows.
 
+Hosted PostgreSQL connections use the dedicated `gram_pulse` schema for all app tables and migration history. The database role needs permission to create that schema. Existing `public` tables are left untouched, including unrelated tables named `users`. Local embedded databases retain their original namespace. If migrating an already-populated GRAM-PULSE installation from `public`, transfer its tables to the new schema before switching; the deployment does not automatically copy or delete public data.
+
 Deployment is complete only after a real Vercel build is Ready and the hosted sign-in, API health, report persistence and image upload are verified. A local passing build is not evidence of a live deployment.
 
 References: [Express on Vercel](https://vercel.com/docs/frameworks/backend/express), [function limits](https://vercel.com/docs/functions/limitations).
