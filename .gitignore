@@ -6,3 +6,5 @@ LOCAL-CREDENTIALS.txt
 test-results/
 playwright-report/
 public/api-client.js
+
+.vercel/

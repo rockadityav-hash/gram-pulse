@@ -1,0 +1,9 @@
+.git
+data
+node_modules
+dist
+.env
+.env.*.local
+LOCAL-CREDENTIALS.txt
+test-results
+playwright-report

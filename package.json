@@ -13,7 +13,8 @@
     "db:seed": "tsx server/cli.ts seed",
     "test": "tsx --test tests/*.test.ts",
     "test:ui": "playwright test",
-    "setup": "node scripts/setup.mjs"
+    "setup": "node scripts/setup.mjs",
+    "vercel-build": "npm run build && tsx server/deploy.ts"
   },
   "dependencies": {
     "@electric-sql/pglite": "^0.3.14",
@@ -36,5 +37,8 @@
     "@playwright/test": "^1.56.0",
     "acorn": "^8.15.0",
     "esbuild": "^0.25.10"
+  },
+  "engines": {
+    "node": "24.x"
   }
 }
