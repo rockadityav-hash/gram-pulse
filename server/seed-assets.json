@@ -1,0 +1,5789 @@
+[
+  {
+    "id": "D04",
+    "type": "Drainage",
+    "name": "Drain D04",
+    "ward": 4,
+    "condition": 38,
+    "pop": 910,
+    "critical": 94,
+    "risk": "High",
+    "confidence": 91,
+    "cost": 1.2,
+    "cat": "drainage",
+    "x": 59,
+    "y": 58,
+    "connections": [
+      "R07",
+      "S02",
+      "PHC01"
+    ],
+    "reports": 8,
+    "verified": "12 days ago",
+    "hazard": 86,
+    "action": "Desilt and repair drain",
+    "reason": [
+      [
+        "Population dependency",
+        24
+      ],
+      [
+        "Poor condition",
+        20
+      ],
+      [
+        "Road dependency",
+        17
+      ],
+      [
+        "School accessibility",
+        14
+      ],
+      [
+        "Rain exposure",
+        11
+      ],
+      [
+        "Citizen reports",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "R07",
+    "type": "Road",
+    "name": "Road R07",
+    "ward": 4,
+    "condition": 52,
+    "pop": 1240,
+    "critical": 91,
+    "risk": "High",
+    "confidence": 87,
+    "cost": 3.8,
+    "cat": "road",
+    "x": 48,
+    "y": 50,
+    "connections": [
+      "D04",
+      "S02",
+      "PHC01",
+      "W02"
+    ],
+    "reports": 3,
+    "verified": "12 days ago",
+    "hazard": 74,
+    "action": "Patch and restore access",
+    "reason": [
+      [
+        "Population dependency",
+        25
+      ],
+      [
+        "Poor condition",
+        16
+      ],
+      [
+        "Critical service access",
+        22
+      ],
+      [
+        "Rain exposure",
+        14
+      ],
+      [
+        "Citizen evidence",
+        8
+      ],
+      [
+        "Network centrality",
+        6
+      ]
+    ]
+  },
+  {
+    "id": "W02",
+    "type": "Water",
+    "name": "Water Tank W02",
+    "ward": 3,
+    "condition": 63,
+    "pop": 1100,
+    "critical": 86,
+    "risk": "Medium",
+    "confidence": 90,
+    "cost": 2.4,
+    "cat": "water",
+    "x": 37,
+    "y": 36,
+    "connections": [
+      "WP06",
+      "R07",
+      "H03"
+    ],
+    "reports": 1,
+    "verified": "8 days ago",
+    "hazard": 36,
+    "action": "Inspect pump and storage",
+    "reason": [
+      [
+        "Population dependency",
+        26
+      ],
+      [
+        "Condition",
+        12
+      ],
+      [
+        "Service criticality",
+        22
+      ],
+      [
+        "Supply centrality",
+        16
+      ],
+      [
+        "Citizen evidence",
+        4
+      ],
+      [
+        "Recency",
+        6
+      ]
+    ]
+  },
+  {
+    "id": "S02",
+    "type": "Education",
+    "name": "Primary School S02",
+    "ward": 4,
+    "condition": 76,
+    "pop": 430,
+    "critical": 78,
+    "risk": "Medium",
+    "confidence": 82,
+    "cost": 1.4,
+    "cat": "education",
+    "x": 69,
+    "y": 39,
+    "connections": [
+      "R07",
+      "D04"
+    ],
+    "reports": 0,
+    "verified": "31 days ago",
+    "hazard": 53,
+    "action": "Repair access approach",
+    "reason": [
+      [
+        "Student dependency",
+        21
+      ],
+      [
+        "Access dependency",
+        23
+      ],
+      [
+        "Condition",
+        12
+      ],
+      [
+        "Hazard exposure",
+        10
+      ],
+      [
+        "Service criticality",
+        12
+      ]
+    ]
+  },
+  {
+    "id": "PHC01",
+    "type": "Healthcare",
+    "name": "Primary Health Centre",
+    "ward": 2,
+    "condition": 83,
+    "pop": 3000,
+    "critical": 89,
+    "risk": "Medium",
+    "confidence": 93,
+    "cost": 2.1,
+    "cat": "health",
+    "x": 26,
+    "y": 64,
+    "connections": [
+      "R07",
+      "D04"
+    ],
+    "reports": 0,
+    "verified": "6 days ago",
+    "hazard": 28,
+    "action": "Maintain all-weather access",
+    "reason": [
+      [
+        "Village-wide service",
+        30
+      ],
+      [
+        "Emergency access",
+        25
+      ],
+      [
+        "Condition",
+        16
+      ],
+      [
+        "Network dependency",
+        18
+      ]
+    ]
+  },
+  {
+    "id": "SL02",
+    "type": "Sanitation",
+    "name": "Streetlight cluster SL02",
+    "ward": 2,
+    "condition": 49,
+    "pop": 250,
+    "critical": 59,
+    "risk": "Medium",
+    "confidence": 71,
+    "cost": 0.8,
+    "cat": "sanitation",
+    "x": 28,
+    "y": 28,
+    "connections": [
+      "R03"
+    ],
+    "reports": 4,
+    "verified": "21 days ago",
+    "hazard": 12,
+    "action": "Replace failed luminaires",
+    "reason": [
+      [
+        "Safety impact",
+        20
+      ],
+      [
+        "Condition",
+        16
+      ],
+      [
+        "Citizen reports",
+        12
+      ],
+      [
+        "Population dependency",
+        11
+      ]
+    ]
+  },
+  {
+    "id": "D09",
+    "type": "Drainage",
+    "name": "Drain D09",
+    "ward": 6,
+    "condition": 47,
+    "pop": 520,
+    "critical": 71,
+    "risk": "Medium",
+    "confidence": 85,
+    "cost": 0.9,
+    "cat": "drainage",
+    "x": 78,
+    "y": 71,
+    "connections": [
+      "R11",
+      "WP06"
+    ],
+    "reports": 2,
+    "verified": "18 days ago",
+    "hazard": 63,
+    "action": "Clear silt and inspect outfall",
+    "reason": [
+      [
+        "Drainage condition",
+        20
+      ],
+      [
+        "Rain exposure",
+        18
+      ],
+      [
+        "Household dependency",
+        15
+      ],
+      [
+        "Citizen evidence",
+        8
+      ],
+      [
+        "Network role",
+        10
+      ]
+    ]
+  },
+  {
+    "id": "WP06",
+    "type": "Water",
+    "name": "Water Point WP06",
+    "ward": 6,
+    "condition": 45,
+    "pop": 360,
+    "critical": 68,
+    "risk": "Medium",
+    "confidence": 75,
+    "cost": 1.1,
+    "cat": "water",
+    "x": 83,
+    "y": 49,
+    "connections": [
+      "W02",
+      "D09"
+    ],
+    "reports": 2,
+    "verified": "27 days ago",
+    "hazard": 30,
+    "action": "Restore community water point",
+    "reason": [
+      [
+        "Water access",
+        25
+      ],
+      [
+        "Condition",
+        17
+      ],
+      [
+        "Ward coverage",
+        14
+      ],
+      [
+        "Citizen evidence",
+        8
+      ],
+      [
+        "Recency",
+        4
+      ]
+    ]
+  },
+  {
+    "id": "H03",
+    "type": "Water",
+    "name": "Hand Pump H03",
+    "ward": 3,
+    "condition": 68,
+    "pop": 180,
+    "critical": 52,
+    "risk": "Medium",
+    "confidence": 78,
+    "cost": 0.55,
+    "cat": "water",
+    "x": 44,
+    "y": 29,
+    "connections": [
+      "W02"
+    ],
+    "reports": 0,
+    "verified": "45 days ago",
+    "hazard": 18,
+    "action": "Preventive pump servicing",
+    "reason": [
+      [
+        "Condition",
+        15
+      ],
+      [
+        "Local coverage",
+        18
+      ],
+      [
+        "Redundancy",
+        10
+      ],
+      [
+        "Recency",
+        9
+      ]
+    ]
+  },
+  {
+    "id": "R03",
+    "type": "Road",
+    "name": "Road R03",
+    "ward": 2,
+    "condition": 74,
+    "pop": 490,
+    "critical": 64,
+    "risk": "Medium",
+    "confidence": 88,
+    "cost": 1.6,
+    "cat": "road",
+    "x": 34,
+    "y": 48,
+    "connections": [
+      "SL02",
+      "PHC01"
+    ],
+    "reports": 0,
+    "verified": "14 days ago",
+    "hazard": 22,
+    "action": "Routine surface maintenance",
+    "reason": [
+      [
+        "Population served",
+        19
+      ],
+      [
+        "Access role",
+        20
+      ],
+      [
+        "Condition",
+        13
+      ],
+      [
+        "Exposure",
+        12
+      ]
+    ]
+  },
+  {
+    "id": "R11",
+    "type": "Road",
+    "name": "Road R11",
+    "ward": 6,
+    "condition": 69,
+    "pop": 610,
+    "critical": 66,
+    "risk": "Medium",
+    "confidence": 80,
+    "cost": 2.2,
+    "cat": "road",
+    "x": 73,
+    "y": 60,
+    "connections": [
+      "D09",
+      "WP06"
+    ],
+    "reports": 1,
+    "verified": "25 days ago",
+    "hazard": 43,
+    "action": "Repair edge and shoulder",
+    "reason": [
+      [
+        "Population served",
+        22
+      ],
+      [
+        "Ward access",
+        19
+      ],
+      [
+        "Condition",
+        14
+      ],
+      [
+        "Rain exposure",
+        11
+      ]
+    ]
+  },
+  {
+    "id": "A01",
+    "type": "Education",
+    "name": "Anganwadi A01",
+    "ward": 1,
+    "condition": 88,
+    "pop": 120,
+    "critical": 48,
+    "risk": "Low",
+    "confidence": 86,
+    "cost": 0.65,
+    "cat": "education",
+    "x": 22,
+    "y": 39,
+    "connections": [
+      "R03"
+    ],
+    "reports": 0,
+    "verified": "11 days ago",
+    "hazard": 15,
+    "action": "Routine maintenance",
+    "reason": [
+      [
+        "Child service",
+        19
+      ],
+      [
+        "Population",
+        12
+      ],
+      [
+        "Condition",
+        9
+      ],
+      [
+        "Access",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "S01",
+    "type": "Education",
+    "name": "Secondary School S01",
+    "ward": 1,
+    "condition": 92,
+    "pop": 620,
+    "critical": 60,
+    "risk": "Low",
+    "confidence": 90,
+    "cost": 1,
+    "cat": "education",
+    "x": 16,
+    "y": 49,
+    "connections": [
+      "R03"
+    ],
+    "reports": 0,
+    "verified": "9 days ago",
+    "hazard": 11,
+    "action": "Routine maintenance",
+    "reason": [
+      [
+        "Student dependency",
+        24
+      ],
+      [
+        "Service role",
+        16
+      ],
+      [
+        "Condition",
+        12
+      ],
+      [
+        "Access",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "D02",
+    "type": "Drainage",
+    "name": "Drain D02",
+    "ward": 1,
+    "condition": 72,
+    "pop": 410,
+    "critical": 57,
+    "risk": "Low",
+    "confidence": 83,
+    "cost": 0.7,
+    "cat": "drainage",
+    "x": 17,
+    "y": 68,
+    "connections": [
+      "R03"
+    ],
+    "reports": 0,
+    "verified": "23 days ago",
+    "hazard": 32,
+    "action": "Seasonal desilting",
+    "reason": [
+      [
+        "Ward dependency",
+        18
+      ],
+      [
+        "Condition",
+        16
+      ],
+      [
+        "Hazard exposure",
+        13
+      ],
+      [
+        "Road relationship",
+        10
+      ]
+    ]
+  },
+  {
+    "id": "D12",
+    "type": "Drainage",
+    "name": "Drain D12",
+    "ward": 5,
+    "condition": 60,
+    "pop": 440,
+    "critical": 61,
+    "risk": "Medium",
+    "confidence": 79,
+    "cost": 0.75,
+    "cat": "drainage",
+    "x": 60,
+    "y": 78,
+    "connections": [
+      "R11"
+    ],
+    "reports": 1,
+    "verified": "19 days ago",
+    "hazard": 47,
+    "action": "Inspect and clear outfall",
+    "reason": [
+      [
+        "Drainage condition",
+        18
+      ],
+      [
+        "Rain exposure",
+        15
+      ],
+      [
+        "People served",
+        14
+      ],
+      [
+        "Evidence",
+        6
+      ],
+      [
+        "Network role",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "W01",
+    "type": "Water",
+    "name": "Water Tank W01",
+    "ward": 1,
+    "condition": 88,
+    "pop": 970,
+    "critical": 64,
+    "risk": "Low",
+    "confidence": 92,
+    "cost": 2,
+    "cat": "water",
+    "x": 17,
+    "y": 28,
+    "connections": [
+      "H03",
+      "S01"
+    ],
+    "reports": 0,
+    "verified": "5 days ago",
+    "hazard": 10,
+    "action": "Routine tank inspection",
+    "reason": [
+      [
+        "Population served",
+        28
+      ],
+      [
+        "Service role",
+        18
+      ],
+      [
+        "Condition",
+        10
+      ],
+      [
+        "Redundancy",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "R21",
+    "type": "Road",
+    "name": "Road R21",
+    "ward": 2,
+    "condition": 69,
+    "pop": 253,
+    "critical": 51,
+    "risk": "Low",
+    "confidence": 78,
+    "cost": 1.15,
+    "cat": "road",
+    "x": 32,
+    "y": 41,
+    "connections": [
+      "D21"
+    ],
+    "reports": 0,
+    "verified": "8 days ago",
+    "hazard": 25,
+    "action": "Routine road maintenance",
+    "reason": [
+      [
+        "Condition and access",
+        20
+      ],
+      [
+        "Population served",
+        18
+      ],
+      [
+        "Hazard exposure",
+        10
+      ]
+    ]
+  },
+  {
+    "id": "R22",
+    "type": "Road",
+    "name": "Road R22",
+    "ward": 3,
+    "condition": 76,
+    "pop": 346,
+    "critical": 60,
+    "risk": "Low",
+    "confidence": 81,
+    "cost": 1.5,
+    "cat": "road",
+    "x": 49,
+    "y": 60,
+    "connections": [
+      "D22"
+    ],
+    "reports": 0,
+    "verified": "9 days ago",
+    "hazard": 38,
+    "action": "Routine road maintenance",
+    "reason": [
+      [
+        "Condition and access",
+        20
+      ],
+      [
+        "Population served",
+        18
+      ],
+      [
+        "Hazard exposure",
+        10
+      ]
+    ]
+  },
+  {
+    "id": "R23",
+    "type": "Road",
+    "name": "Road R23",
+    "ward": 4,
+    "condition": 83,
+    "pop": 439,
+    "critical": 69,
+    "risk": "Low",
+    "confidence": 84,
+    "cost": 1.8499999999999999,
+    "cat": "road",
+    "x": 66,
+    "y": 79,
+    "connections": [
+      "D04"
+    ],
+    "reports": 0,
+    "verified": "10 days ago",
+    "hazard": 51,
+    "action": "Routine road maintenance",
+    "reason": [
+      [
+        "Condition and access",
+        20
+      ],
+      [
+        "Population served",
+        18
+      ],
+      [
+        "Hazard exposure",
+        10
+      ]
+    ]
+  },
+  {
+    "id": "R24",
+    "type": "Road",
+    "name": "Road R24",
+    "ward": 5,
+    "condition": 90,
+    "pop": 532,
+    "critical": 48,
+    "risk": "Medium",
+    "confidence": 87,
+    "cost": 0.8,
+    "cat": "road",
+    "x": 83,
+    "y": 38,
+    "connections": [
+      "D12"
+    ],
+    "reports": 0,
+    "verified": "11 days ago",
+    "hazard": 16,
+    "action": "Routine road maintenance",
+    "reason": [
+      [
+        "Condition and access",
+        20
+      ],
+      [
+        "Population served",
+        18
+      ],
+      [
+        "Hazard exposure",
+        10
+      ]
+    ]
+  },
+  {
+    "id": "R25",
+    "type": "Road",
+    "name": "Road R25",
+    "ward": 6,
+    "condition": 63,
+    "pop": 625,
+    "critical": 57,
+    "risk": "Low",
+    "confidence": 90,
+    "cost": 1.15,
+    "cat": "road",
+    "x": 30,
+    "y": 57,
+    "connections": [
+      "D09"
+    ],
+    "reports": 0,
+    "verified": "12 days ago",
+    "hazard": 29,
+    "action": "Routine road maintenance",
+    "reason": [
+      [
+        "Condition and access",
+        20
+      ],
+      [
+        "Population served",
+        18
+      ],
+      [
+        "Hazard exposure",
+        10
+      ]
+    ]
+  },
+  {
+    "id": "R26",
+    "type": "Road",
+    "name": "Road R26",
+    "ward": 1,
+    "condition": 70,
+    "pop": 168,
+    "critical": 66,
+    "risk": "Low",
+    "confidence": 93,
+    "cost": 1.5,
+    "cat": "road",
+    "x": 47,
+    "y": 76,
+    "connections": [
+      "D02"
+    ],
+    "reports": 0,
+    "verified": "13 days ago",
+    "hazard": 42,
+    "action": "Routine road maintenance",
+    "reason": [
+      [
+        "Condition and access",
+        20
+      ],
+      [
+        "Population served",
+        18
+      ],
+      [
+        "Hazard exposure",
+        10
+      ]
+    ]
+  },
+  {
+    "id": "R27",
+    "type": "Road",
+    "name": "Road R27",
+    "ward": 2,
+    "condition": 77,
+    "pop": 261,
+    "critical": 45,
+    "risk": "Low",
+    "confidence": 96,
+    "cost": 1.8499999999999999,
+    "cat": "road",
+    "x": 64,
+    "y": 35,
+    "connections": [
+      "D21"
+    ],
+    "reports": 0,
+    "verified": "14 days ago",
+    "hazard": 55,
+    "action": "Routine road maintenance",
+    "reason": [
+      [
+        "Condition and access",
+        20
+      ],
+      [
+        "Population served",
+        18
+      ],
+      [
+        "Hazard exposure",
+        10
+      ]
+    ]
+  },
+  {
+    "id": "R28",
+    "type": "Road",
+    "name": "Road R28",
+    "ward": 3,
+    "condition": 84,
+    "pop": 354,
+    "critical": 54,
+    "risk": "Medium",
+    "confidence": 77,
+    "cost": 0.8,
+    "cat": "road",
+    "x": 81,
+    "y": 54,
+    "connections": [
+      "D22"
+    ],
+    "reports": 0,
+    "verified": "15 days ago",
+    "hazard": 20,
+    "action": "Routine road maintenance",
+    "reason": [
+      [
+        "Condition and access",
+        20
+      ],
+      [
+        "Population served",
+        18
+      ],
+      [
+        "Hazard exposure",
+        10
+      ]
+    ]
+  },
+  {
+    "id": "R29",
+    "type": "Road",
+    "name": "Road R29",
+    "ward": 4,
+    "condition": 91,
+    "pop": 447,
+    "critical": 63,
+    "risk": "Low",
+    "confidence": 80,
+    "cost": 1.15,
+    "cat": "road",
+    "x": 28,
+    "y": 73,
+    "connections": [
+      "D04"
+    ],
+    "reports": 0,
+    "verified": "16 days ago",
+    "hazard": 33,
+    "action": "Routine road maintenance",
+    "reason": [
+      [
+        "Condition and access",
+        20
+      ],
+      [
+        "Population served",
+        18
+      ],
+      [
+        "Hazard exposure",
+        10
+      ]
+    ]
+  },
+  {
+    "id": "R30",
+    "type": "Road",
+    "name": "Road R30",
+    "ward": 5,
+    "condition": 64,
+    "pop": 540,
+    "critical": 42,
+    "risk": "Low",
+    "confidence": 83,
+    "cost": 1.5,
+    "cat": "road",
+    "x": 45,
+    "y": 32,
+    "connections": [
+      "D12"
+    ],
+    "reports": 0,
+    "verified": "17 days ago",
+    "hazard": 46,
+    "action": "Routine road maintenance",
+    "reason": [
+      [
+        "Condition and access",
+        20
+      ],
+      [
+        "Population served",
+        18
+      ],
+      [
+        "Hazard exposure",
+        10
+      ]
+    ]
+  },
+  {
+    "id": "R31",
+    "type": "Road",
+    "name": "Road R31",
+    "ward": 6,
+    "condition": 71,
+    "pop": 633,
+    "critical": 51,
+    "risk": "Low",
+    "confidence": 86,
+    "cost": 1.8499999999999999,
+    "cat": "road",
+    "x": 62,
+    "y": 51,
+    "connections": [
+      "D09"
+    ],
+    "reports": 0,
+    "verified": "18 days ago",
+    "hazard": 59,
+    "action": "Routine road maintenance",
+    "reason": [
+      [
+        "Condition and access",
+        20
+      ],
+      [
+        "Population served",
+        18
+      ],
+      [
+        "Hazard exposure",
+        10
+      ]
+    ]
+  },
+  {
+    "id": "R32",
+    "type": "Road",
+    "name": "Road R32",
+    "ward": 1,
+    "condition": 78,
+    "pop": 176,
+    "critical": 60,
+    "risk": "Medium",
+    "confidence": 89,
+    "cost": 0.8,
+    "cat": "road",
+    "x": 79,
+    "y": 70,
+    "connections": [
+      "D02"
+    ],
+    "reports": 0,
+    "verified": "19 days ago",
+    "hazard": 24,
+    "action": "Routine road maintenance",
+    "reason": [
+      [
+        "Condition and access",
+        20
+      ],
+      [
+        "Population served",
+        18
+      ],
+      [
+        "Hazard exposure",
+        10
+      ]
+    ]
+  },
+  {
+    "id": "R33",
+    "type": "Road",
+    "name": "Road R33",
+    "ward": 2,
+    "condition": 85,
+    "pop": 269,
+    "critical": 69,
+    "risk": "Low",
+    "confidence": 92,
+    "cost": 1.15,
+    "cat": "road",
+    "x": 26,
+    "y": 29,
+    "connections": [
+      "D21"
+    ],
+    "reports": 0,
+    "verified": "20 days ago",
+    "hazard": 37,
+    "action": "Routine road maintenance",
+    "reason": [
+      [
+        "Condition and access",
+        20
+      ],
+      [
+        "Population served",
+        18
+      ],
+      [
+        "Hazard exposure",
+        10
+      ]
+    ]
+  },
+  {
+    "id": "R34",
+    "type": "Road",
+    "name": "Road R34",
+    "ward": 3,
+    "condition": 92,
+    "pop": 362,
+    "critical": 48,
+    "risk": "Low",
+    "confidence": 95,
+    "cost": 1.5,
+    "cat": "road",
+    "x": 43,
+    "y": 48,
+    "connections": [
+      "D22"
+    ],
+    "reports": 0,
+    "verified": "21 days ago",
+    "hazard": 50,
+    "action": "Routine road maintenance",
+    "reason": [
+      [
+        "Condition and access",
+        20
+      ],
+      [
+        "Population served",
+        18
+      ],
+      [
+        "Hazard exposure",
+        10
+      ]
+    ]
+  },
+  {
+    "id": "R35",
+    "type": "Road",
+    "name": "Road R35",
+    "ward": 4,
+    "condition": 65,
+    "pop": 455,
+    "critical": 57,
+    "risk": "Low",
+    "confidence": 76,
+    "cost": 1.8499999999999999,
+    "cat": "road",
+    "x": 60,
+    "y": 67,
+    "connections": [
+      "D04"
+    ],
+    "reports": 0,
+    "verified": "22 days ago",
+    "hazard": 15,
+    "action": "Routine road maintenance",
+    "reason": [
+      [
+        "Condition and access",
+        20
+      ],
+      [
+        "Population served",
+        18
+      ],
+      [
+        "Hazard exposure",
+        10
+      ]
+    ]
+  },
+  {
+    "id": "R36",
+    "type": "Road",
+    "name": "Road R36",
+    "ward": 5,
+    "condition": 72,
+    "pop": 548,
+    "critical": 66,
+    "risk": "Medium",
+    "confidence": 79,
+    "cost": 0.8,
+    "cat": "road",
+    "x": 77,
+    "y": 26,
+    "connections": [
+      "D12"
+    ],
+    "reports": 0,
+    "verified": "23 days ago",
+    "hazard": 28,
+    "action": "Routine road maintenance",
+    "reason": [
+      [
+        "Condition and access",
+        20
+      ],
+      [
+        "Population served",
+        18
+      ],
+      [
+        "Hazard exposure",
+        10
+      ]
+    ]
+  },
+  {
+    "id": "R37",
+    "type": "Road",
+    "name": "Road R37",
+    "ward": 6,
+    "condition": 79,
+    "pop": 641,
+    "critical": 45,
+    "risk": "Low",
+    "confidence": 82,
+    "cost": 1.15,
+    "cat": "road",
+    "x": 24,
+    "y": 45,
+    "connections": [
+      "D09"
+    ],
+    "reports": 0,
+    "verified": "24 days ago",
+    "hazard": 41,
+    "action": "Routine road maintenance",
+    "reason": [
+      [
+        "Condition and access",
+        20
+      ],
+      [
+        "Population served",
+        18
+      ],
+      [
+        "Hazard exposure",
+        10
+      ]
+    ]
+  },
+  {
+    "id": "R38",
+    "type": "Road",
+    "name": "Road R38",
+    "ward": 1,
+    "condition": 86,
+    "pop": 184,
+    "critical": 54,
+    "risk": "Low",
+    "confidence": 85,
+    "cost": 1.5,
+    "cat": "road",
+    "x": 41,
+    "y": 64,
+    "connections": [
+      "D02"
+    ],
+    "reports": 0,
+    "verified": "25 days ago",
+    "hazard": 54,
+    "action": "Routine road maintenance",
+    "reason": [
+      [
+        "Condition and access",
+        20
+      ],
+      [
+        "Population served",
+        18
+      ],
+      [
+        "Hazard exposure",
+        10
+      ]
+    ]
+  },
+  {
+    "id": "R39",
+    "type": "Road",
+    "name": "Road R39",
+    "ward": 2,
+    "condition": 93,
+    "pop": 277,
+    "critical": 63,
+    "risk": "Low",
+    "confidence": 88,
+    "cost": 1.8499999999999999,
+    "cat": "road",
+    "x": 58,
+    "y": 23,
+    "connections": [
+      "D21"
+    ],
+    "reports": 0,
+    "verified": "26 days ago",
+    "hazard": 19,
+    "action": "Routine road maintenance",
+    "reason": [
+      [
+        "Condition and access",
+        20
+      ],
+      [
+        "Population served",
+        18
+      ],
+      [
+        "Hazard exposure",
+        10
+      ]
+    ]
+  },
+  {
+    "id": "R40",
+    "type": "Road",
+    "name": "Road R40",
+    "ward": 3,
+    "condition": 66,
+    "pop": 370,
+    "critical": 42,
+    "risk": "Medium",
+    "confidence": 91,
+    "cost": 0.8,
+    "cat": "road",
+    "x": 75,
+    "y": 42,
+    "connections": [
+      "D22"
+    ],
+    "reports": 0,
+    "verified": "27 days ago",
+    "hazard": 32,
+    "action": "Routine road maintenance",
+    "reason": [
+      [
+        "Condition and access",
+        20
+      ],
+      [
+        "Population served",
+        18
+      ],
+      [
+        "Hazard exposure",
+        10
+      ]
+    ]
+  },
+  {
+    "id": "R41",
+    "type": "Road",
+    "name": "Road R41",
+    "ward": 4,
+    "condition": 73,
+    "pop": 463,
+    "critical": 51,
+    "risk": "Low",
+    "confidence": 94,
+    "cost": 1.15,
+    "cat": "road",
+    "x": 22,
+    "y": 61,
+    "connections": [
+      "D04"
+    ],
+    "reports": 0,
+    "verified": "28 days ago",
+    "hazard": 45,
+    "action": "Routine road maintenance",
+    "reason": [
+      [
+        "Condition and access",
+        20
+      ],
+      [
+        "Population served",
+        18
+      ],
+      [
+        "Hazard exposure",
+        10
+      ]
+    ]
+  },
+  {
+    "id": "R42",
+    "type": "Road",
+    "name": "Road R42",
+    "ward": 5,
+    "condition": 80,
+    "pop": 556,
+    "critical": 60,
+    "risk": "Low",
+    "confidence": 75,
+    "cost": 1.5,
+    "cat": "road",
+    "x": 39,
+    "y": 80,
+    "connections": [
+      "D12"
+    ],
+    "reports": 0,
+    "verified": "29 days ago",
+    "hazard": 58,
+    "action": "Routine road maintenance",
+    "reason": [
+      [
+        "Condition and access",
+        20
+      ],
+      [
+        "Population served",
+        18
+      ],
+      [
+        "Hazard exposure",
+        10
+      ]
+    ]
+  },
+  {
+    "id": "R43",
+    "type": "Road",
+    "name": "Road R43",
+    "ward": 6,
+    "condition": 87,
+    "pop": 649,
+    "critical": 69,
+    "risk": "Low",
+    "confidence": 78,
+    "cost": 1.8499999999999999,
+    "cat": "road",
+    "x": 56,
+    "y": 39,
+    "connections": [
+      "D09"
+    ],
+    "reports": 0,
+    "verified": "30 days ago",
+    "hazard": 23,
+    "action": "Routine road maintenance",
+    "reason": [
+      [
+        "Condition and access",
+        20
+      ],
+      [
+        "Population served",
+        18
+      ],
+      [
+        "Hazard exposure",
+        10
+      ]
+    ]
+  },
+  {
+    "id": "R44",
+    "type": "Road",
+    "name": "Road R44",
+    "ward": 1,
+    "condition": 94,
+    "pop": 192,
+    "critical": 48,
+    "risk": "Medium",
+    "confidence": 81,
+    "cost": 0.8,
+    "cat": "road",
+    "x": 73,
+    "y": 58,
+    "connections": [
+      "D02"
+    ],
+    "reports": 0,
+    "verified": "31 days ago",
+    "hazard": 36,
+    "action": "Routine road maintenance",
+    "reason": [
+      [
+        "Condition and access",
+        20
+      ],
+      [
+        "Population served",
+        18
+      ],
+      [
+        "Hazard exposure",
+        10
+      ]
+    ]
+  },
+  {
+    "id": "R45",
+    "type": "Road",
+    "name": "Road R45",
+    "ward": 2,
+    "condition": 67,
+    "pop": 285,
+    "critical": 57,
+    "risk": "Low",
+    "confidence": 84,
+    "cost": 1.15,
+    "cat": "road",
+    "x": 20,
+    "y": 77,
+    "connections": [
+      "D21"
+    ],
+    "reports": 0,
+    "verified": "32 days ago",
+    "hazard": 49,
+    "action": "Routine road maintenance",
+    "reason": [
+      [
+        "Condition and access",
+        20
+      ],
+      [
+        "Population served",
+        18
+      ],
+      [
+        "Hazard exposure",
+        10
+      ]
+    ]
+  },
+  {
+    "id": "D21",
+    "type": "Drainage",
+    "name": "Drain D21",
+    "ward": 2,
+    "condition": 65,
+    "pop": 197,
+    "critical": 45,
+    "risk": "Low",
+    "confidence": 75,
+    "cost": 0.65,
+    "cat": "drainage",
+    "x": 33,
+    "y": 38,
+    "connections": [
+      "R03"
+    ],
+    "reports": 0,
+    "verified": "10 days ago",
+    "hazard": 24,
+    "action": "Seasonal drain maintenance",
+    "reason": [
+      [
+        "Condition",
+        17
+      ],
+      [
+        "Household service",
+        14
+      ],
+      [
+        "Exposure",
+        12
+      ]
+    ]
+  },
+  {
+    "id": "D22",
+    "type": "Drainage",
+    "name": "Drain D22",
+    "ward": 3,
+    "condition": 76,
+    "pop": 264,
+    "critical": 52,
+    "risk": "Low",
+    "confidence": 80,
+    "cost": 0.8500000000000001,
+    "cat": "drainage",
+    "x": 54,
+    "y": 51,
+    "connections": [
+      "R22"
+    ],
+    "reports": 0,
+    "verified": "11 days ago",
+    "hazard": 33,
+    "action": "Seasonal drain maintenance",
+    "reason": [
+      [
+        "Condition",
+        17
+      ],
+      [
+        "Household service",
+        14
+      ],
+      [
+        "Exposure",
+        12
+      ]
+    ]
+  },
+  {
+    "id": "D23",
+    "type": "Drainage",
+    "name": "Drain D23",
+    "ward": 4,
+    "condition": 87,
+    "pop": 331,
+    "critical": 59,
+    "risk": "Low",
+    "confidence": 85,
+    "cost": 0.45,
+    "cat": "drainage",
+    "x": 75,
+    "y": 64,
+    "connections": [
+      "R07"
+    ],
+    "reports": 0,
+    "verified": "12 days ago",
+    "hazard": 42,
+    "action": "Seasonal drain maintenance",
+    "reason": [
+      [
+        "Condition",
+        17
+      ],
+      [
+        "Household service",
+        14
+      ],
+      [
+        "Exposure",
+        12
+      ]
+    ]
+  },
+  {
+    "id": "D24",
+    "type": "Drainage",
+    "name": "Drain D24",
+    "ward": 5,
+    "condition": 58,
+    "pop": 398,
+    "critical": 66,
+    "risk": "Low",
+    "confidence": 90,
+    "cost": 0.65,
+    "cat": "drainage",
+    "x": 20,
+    "y": 77,
+    "connections": [
+      "R24"
+    ],
+    "reports": 0,
+    "verified": "13 days ago",
+    "hazard": 51,
+    "action": "Seasonal drain maintenance",
+    "reason": [
+      [
+        "Condition",
+        17
+      ],
+      [
+        "Household service",
+        14
+      ],
+      [
+        "Exposure",
+        12
+      ]
+    ]
+  },
+  {
+    "id": "D25",
+    "type": "Drainage",
+    "name": "Drain D25",
+    "ward": 6,
+    "condition": 69,
+    "pop": 465,
+    "critical": 38,
+    "risk": "Medium",
+    "confidence": 70,
+    "cost": 0.8500000000000001,
+    "cat": "drainage",
+    "x": 41,
+    "y": 28,
+    "connections": [
+      "R11"
+    ],
+    "reports": 0,
+    "verified": "14 days ago",
+    "hazard": 60,
+    "action": "Seasonal drain maintenance",
+    "reason": [
+      [
+        "Condition",
+        17
+      ],
+      [
+        "Household service",
+        14
+      ],
+      [
+        "Exposure",
+        12
+      ]
+    ]
+  },
+  {
+    "id": "D26",
+    "type": "Drainage",
+    "name": "Drain D26",
+    "ward": 1,
+    "condition": 80,
+    "pop": 142,
+    "critical": 45,
+    "risk": "Low",
+    "confidence": 75,
+    "cost": 0.45,
+    "cat": "drainage",
+    "x": 62,
+    "y": 41,
+    "connections": [
+      "R26"
+    ],
+    "reports": 0,
+    "verified": "15 days ago",
+    "hazard": 19,
+    "action": "Seasonal drain maintenance",
+    "reason": [
+      [
+        "Condition",
+        17
+      ],
+      [
+        "Household service",
+        14
+      ],
+      [
+        "Exposure",
+        12
+      ]
+    ]
+  },
+  {
+    "id": "D27",
+    "type": "Drainage",
+    "name": "Drain D27",
+    "ward": 2,
+    "condition": 91,
+    "pop": 209,
+    "critical": 52,
+    "risk": "Low",
+    "confidence": 80,
+    "cost": 0.65,
+    "cat": "drainage",
+    "x": 83,
+    "y": 54,
+    "connections": [
+      "R03"
+    ],
+    "reports": 1,
+    "verified": "16 days ago",
+    "hazard": 28,
+    "action": "Seasonal drain maintenance",
+    "reason": [
+      [
+        "Condition",
+        17
+      ],
+      [
+        "Household service",
+        14
+      ],
+      [
+        "Exposure",
+        12
+      ]
+    ]
+  },
+  {
+    "id": "D28",
+    "type": "Drainage",
+    "name": "Drain D28",
+    "ward": 3,
+    "condition": 62,
+    "pop": 276,
+    "critical": 59,
+    "risk": "Low",
+    "confidence": 85,
+    "cost": 0.8500000000000001,
+    "cat": "drainage",
+    "x": 28,
+    "y": 67,
+    "connections": [
+      "R22"
+    ],
+    "reports": 0,
+    "verified": "17 days ago",
+    "hazard": 37,
+    "action": "Seasonal drain maintenance",
+    "reason": [
+      [
+        "Condition",
+        17
+      ],
+      [
+        "Household service",
+        14
+      ],
+      [
+        "Exposure",
+        12
+      ]
+    ]
+  },
+  {
+    "id": "D29",
+    "type": "Drainage",
+    "name": "Drain D29",
+    "ward": 4,
+    "condition": 73,
+    "pop": 343,
+    "critical": 66,
+    "risk": "Low",
+    "confidence": 90,
+    "cost": 0.45,
+    "cat": "drainage",
+    "x": 49,
+    "y": 80,
+    "connections": [
+      "R07"
+    ],
+    "reports": 0,
+    "verified": "18 days ago",
+    "hazard": 46,
+    "action": "Seasonal drain maintenance",
+    "reason": [
+      [
+        "Condition",
+        17
+      ],
+      [
+        "Household service",
+        14
+      ],
+      [
+        "Exposure",
+        12
+      ]
+    ]
+  },
+  {
+    "id": "D30",
+    "type": "Drainage",
+    "name": "Drain D30",
+    "ward": 5,
+    "condition": 84,
+    "pop": 410,
+    "critical": 38,
+    "risk": "Medium",
+    "confidence": 70,
+    "cost": 0.65,
+    "cat": "drainage",
+    "x": 70,
+    "y": 31,
+    "connections": [
+      "R24"
+    ],
+    "reports": 0,
+    "verified": "19 days ago",
+    "hazard": 55,
+    "action": "Seasonal drain maintenance",
+    "reason": [
+      [
+        "Condition",
+        17
+      ],
+      [
+        "Household service",
+        14
+      ],
+      [
+        "Exposure",
+        12
+      ]
+    ]
+  },
+  {
+    "id": "D31",
+    "type": "Drainage",
+    "name": "Drain D31",
+    "ward": 6,
+    "condition": 55,
+    "pop": 477,
+    "critical": 45,
+    "risk": "Low",
+    "confidence": 75,
+    "cost": 0.8500000000000001,
+    "cat": "drainage",
+    "x": 15,
+    "y": 44,
+    "connections": [
+      "R11"
+    ],
+    "reports": 0,
+    "verified": "20 days ago",
+    "hazard": 64,
+    "action": "Seasonal drain maintenance",
+    "reason": [
+      [
+        "Condition",
+        17
+      ],
+      [
+        "Household service",
+        14
+      ],
+      [
+        "Exposure",
+        12
+      ]
+    ]
+  },
+  {
+    "id": "D32",
+    "type": "Drainage",
+    "name": "Drain D32",
+    "ward": 1,
+    "condition": 66,
+    "pop": 154,
+    "critical": 52,
+    "risk": "Low",
+    "confidence": 80,
+    "cost": 0.45,
+    "cat": "drainage",
+    "x": 36,
+    "y": 57,
+    "connections": [
+      "R26"
+    ],
+    "reports": 0,
+    "verified": "21 days ago",
+    "hazard": 23,
+    "action": "Seasonal drain maintenance",
+    "reason": [
+      [
+        "Condition",
+        17
+      ],
+      [
+        "Household service",
+        14
+      ],
+      [
+        "Exposure",
+        12
+      ]
+    ]
+  },
+  {
+    "id": "D33",
+    "type": "Drainage",
+    "name": "Drain D33",
+    "ward": 2,
+    "condition": 77,
+    "pop": 221,
+    "critical": 59,
+    "risk": "Low",
+    "confidence": 85,
+    "cost": 0.65,
+    "cat": "drainage",
+    "x": 57,
+    "y": 70,
+    "connections": [
+      "R03"
+    ],
+    "reports": 0,
+    "verified": "22 days ago",
+    "hazard": 32,
+    "action": "Seasonal drain maintenance",
+    "reason": [
+      [
+        "Condition",
+        17
+      ],
+      [
+        "Household service",
+        14
+      ],
+      [
+        "Exposure",
+        12
+      ]
+    ]
+  },
+  {
+    "id": "D34",
+    "type": "Drainage",
+    "name": "Drain D34",
+    "ward": 3,
+    "condition": 88,
+    "pop": 288,
+    "critical": 66,
+    "risk": "Low",
+    "confidence": 90,
+    "cost": 0.8500000000000001,
+    "cat": "drainage",
+    "x": 78,
+    "y": 83,
+    "connections": [
+      "R22"
+    ],
+    "reports": 1,
+    "verified": "23 days ago",
+    "hazard": 41,
+    "action": "Seasonal drain maintenance",
+    "reason": [
+      [
+        "Condition",
+        17
+      ],
+      [
+        "Household service",
+        14
+      ],
+      [
+        "Exposure",
+        12
+      ]
+    ]
+  },
+  {
+    "id": "D35",
+    "type": "Drainage",
+    "name": "Drain D35",
+    "ward": 4,
+    "condition": 59,
+    "pop": 355,
+    "critical": 38,
+    "risk": "Medium",
+    "confidence": 70,
+    "cost": 0.45,
+    "cat": "drainage",
+    "x": 23,
+    "y": 34,
+    "connections": [
+      "R07"
+    ],
+    "reports": 0,
+    "verified": "24 days ago",
+    "hazard": 50,
+    "action": "Seasonal drain maintenance",
+    "reason": [
+      [
+        "Condition",
+        17
+      ],
+      [
+        "Household service",
+        14
+      ],
+      [
+        "Exposure",
+        12
+      ]
+    ]
+  },
+  {
+    "id": "D36",
+    "type": "Drainage",
+    "name": "Drain D36",
+    "ward": 5,
+    "condition": 70,
+    "pop": 422,
+    "critical": 45,
+    "risk": "Low",
+    "confidence": 75,
+    "cost": 0.65,
+    "cat": "drainage",
+    "x": 44,
+    "y": 47,
+    "connections": [
+      "R24"
+    ],
+    "reports": 0,
+    "verified": "25 days ago",
+    "hazard": 59,
+    "action": "Seasonal drain maintenance",
+    "reason": [
+      [
+        "Condition",
+        17
+      ],
+      [
+        "Household service",
+        14
+      ],
+      [
+        "Exposure",
+        12
+      ]
+    ]
+  },
+  {
+    "id": "D37",
+    "type": "Drainage",
+    "name": "Drain D37",
+    "ward": 6,
+    "condition": 81,
+    "pop": 489,
+    "critical": 52,
+    "risk": "Low",
+    "confidence": 80,
+    "cost": 0.8500000000000001,
+    "cat": "drainage",
+    "x": 65,
+    "y": 60,
+    "connections": [
+      "R11"
+    ],
+    "reports": 0,
+    "verified": "26 days ago",
+    "hazard": 18,
+    "action": "Seasonal drain maintenance",
+    "reason": [
+      [
+        "Condition",
+        17
+      ],
+      [
+        "Household service",
+        14
+      ],
+      [
+        "Exposure",
+        12
+      ]
+    ]
+  },
+  {
+    "id": "D38",
+    "type": "Drainage",
+    "name": "Drain D38",
+    "ward": 1,
+    "condition": 92,
+    "pop": 166,
+    "critical": 59,
+    "risk": "Low",
+    "confidence": 85,
+    "cost": 0.45,
+    "cat": "drainage",
+    "x": 86,
+    "y": 73,
+    "connections": [
+      "R26"
+    ],
+    "reports": 0,
+    "verified": "27 days ago",
+    "hazard": 27,
+    "action": "Seasonal drain maintenance",
+    "reason": [
+      [
+        "Condition",
+        17
+      ],
+      [
+        "Household service",
+        14
+      ],
+      [
+        "Exposure",
+        12
+      ]
+    ]
+  },
+  {
+    "id": "D39",
+    "type": "Drainage",
+    "name": "Drain D39",
+    "ward": 2,
+    "condition": 63,
+    "pop": 233,
+    "critical": 66,
+    "risk": "Low",
+    "confidence": 90,
+    "cost": 0.65,
+    "cat": "drainage",
+    "x": 31,
+    "y": 86,
+    "connections": [
+      "R03"
+    ],
+    "reports": 0,
+    "verified": "28 days ago",
+    "hazard": 36,
+    "action": "Seasonal drain maintenance",
+    "reason": [
+      [
+        "Condition",
+        17
+      ],
+      [
+        "Household service",
+        14
+      ],
+      [
+        "Exposure",
+        12
+      ]
+    ]
+  },
+  {
+    "id": "D40",
+    "type": "Drainage",
+    "name": "Drain D40",
+    "ward": 3,
+    "condition": 74,
+    "pop": 300,
+    "critical": 38,
+    "risk": "Medium",
+    "confidence": 70,
+    "cost": 0.8500000000000001,
+    "cat": "drainage",
+    "x": 52,
+    "y": 37,
+    "connections": [
+      "R22"
+    ],
+    "reports": 0,
+    "verified": "29 days ago",
+    "hazard": 45,
+    "action": "Seasonal drain maintenance",
+    "reason": [
+      [
+        "Condition",
+        17
+      ],
+      [
+        "Household service",
+        14
+      ],
+      [
+        "Exposure",
+        12
+      ]
+    ]
+  },
+  {
+    "id": "D41",
+    "type": "Drainage",
+    "name": "Drain D41",
+    "ward": 4,
+    "condition": 85,
+    "pop": 367,
+    "critical": 45,
+    "risk": "Low",
+    "confidence": 75,
+    "cost": 0.45,
+    "cat": "drainage",
+    "x": 73,
+    "y": 50,
+    "connections": [
+      "R07"
+    ],
+    "reports": 1,
+    "verified": "30 days ago",
+    "hazard": 54,
+    "action": "Seasonal drain maintenance",
+    "reason": [
+      [
+        "Condition",
+        17
+      ],
+      [
+        "Household service",
+        14
+      ],
+      [
+        "Exposure",
+        12
+      ]
+    ]
+  },
+  {
+    "id": "D42",
+    "type": "Drainage",
+    "name": "Drain D42",
+    "ward": 5,
+    "condition": 56,
+    "pop": 434,
+    "critical": 52,
+    "risk": "Low",
+    "confidence": 80,
+    "cost": 0.65,
+    "cat": "drainage",
+    "x": 18,
+    "y": 63,
+    "connections": [
+      "R24"
+    ],
+    "reports": 0,
+    "verified": "31 days ago",
+    "hazard": 63,
+    "action": "Seasonal drain maintenance",
+    "reason": [
+      [
+        "Condition",
+        17
+      ],
+      [
+        "Household service",
+        14
+      ],
+      [
+        "Exposure",
+        12
+      ]
+    ]
+  },
+  {
+    "id": "D43",
+    "type": "Drainage",
+    "name": "Drain D43",
+    "ward": 6,
+    "condition": 67,
+    "pop": 501,
+    "critical": 59,
+    "risk": "Low",
+    "confidence": 85,
+    "cost": 0.8500000000000001,
+    "cat": "drainage",
+    "x": 39,
+    "y": 76,
+    "connections": [
+      "R11"
+    ],
+    "reports": 0,
+    "verified": "32 days ago",
+    "hazard": 22,
+    "action": "Seasonal drain maintenance",
+    "reason": [
+      [
+        "Condition",
+        17
+      ],
+      [
+        "Household service",
+        14
+      ],
+      [
+        "Exposure",
+        12
+      ]
+    ]
+  },
+  {
+    "id": "D44",
+    "type": "Drainage",
+    "name": "Drain D44",
+    "ward": 1,
+    "condition": 78,
+    "pop": 178,
+    "critical": 66,
+    "risk": "Low",
+    "confidence": 90,
+    "cost": 0.45,
+    "cat": "drainage",
+    "x": 60,
+    "y": 27,
+    "connections": [
+      "R26"
+    ],
+    "reports": 0,
+    "verified": "33 days ago",
+    "hazard": 31,
+    "action": "Seasonal drain maintenance",
+    "reason": [
+      [
+        "Condition",
+        17
+      ],
+      [
+        "Household service",
+        14
+      ],
+      [
+        "Exposure",
+        12
+      ]
+    ]
+  },
+  {
+    "id": "D45",
+    "type": "Drainage",
+    "name": "Drain D45",
+    "ward": 2,
+    "condition": 89,
+    "pop": 245,
+    "critical": 38,
+    "risk": "Medium",
+    "confidence": 70,
+    "cost": 0.65,
+    "cat": "drainage",
+    "x": 81,
+    "y": 40,
+    "connections": [
+      "R03"
+    ],
+    "reports": 0,
+    "verified": "34 days ago",
+    "hazard": 40,
+    "action": "Seasonal drain maintenance",
+    "reason": [
+      [
+        "Condition",
+        17
+      ],
+      [
+        "Household service",
+        14
+      ],
+      [
+        "Exposure",
+        12
+      ]
+    ]
+  },
+  {
+    "id": "HP01",
+    "type": "Water",
+    "name": "Hand Pump H01",
+    "ward": 2,
+    "condition": 68,
+    "pop": 74,
+    "critical": 30,
+    "risk": "Low",
+    "confidence": 74,
+    "cost": 0.24,
+    "cat": "water",
+    "x": 33,
+    "y": 37,
+    "connections": [
+      "W01"
+    ],
+    "reports": 0,
+    "verified": "6 days ago",
+    "hazard": 19,
+    "action": "Preventive inspection",
+    "reason": [
+      [
+        "Condition",
+        15
+      ],
+      [
+        "Local coverage",
+        13
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "HP02",
+    "type": "Water",
+    "name": "Hand Pump H02",
+    "ward": 3,
+    "condition": 75,
+    "pop": 113,
+    "critical": 35,
+    "risk": "Low",
+    "confidence": 81,
+    "cost": 0.36,
+    "cat": "water",
+    "x": 56,
+    "y": 54,
+    "connections": [
+      "W02"
+    ],
+    "reports": 0,
+    "verified": "7 days ago",
+    "hazard": 30,
+    "action": "Preventive inspection",
+    "reason": [
+      [
+        "Condition",
+        15
+      ],
+      [
+        "Local coverage",
+        13
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "HP03",
+    "type": "Water",
+    "name": "Hand Pump H03",
+    "ward": 4,
+    "condition": 82,
+    "pop": 152,
+    "critical": 40,
+    "risk": "Low",
+    "confidence": 88,
+    "cost": 0.48,
+    "cat": "water",
+    "x": 79,
+    "y": 71,
+    "connections": [
+      "W02"
+    ],
+    "reports": 0,
+    "verified": "8 days ago",
+    "hazard": 41,
+    "action": "Preventive inspection",
+    "reason": [
+      [
+        "Condition",
+        15
+      ],
+      [
+        "Local coverage",
+        13
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "HP04",
+    "type": "Water",
+    "name": "Hand Pump H04",
+    "ward": 5,
+    "condition": 89,
+    "pop": 41,
+    "critical": 45,
+    "risk": "Low",
+    "confidence": 95,
+    "cost": 0.6,
+    "cat": "water",
+    "x": 22,
+    "y": 23,
+    "connections": [
+      "W03"
+    ],
+    "reports": 0,
+    "verified": "9 days ago",
+    "hazard": 17,
+    "action": "Preventive inspection",
+    "reason": [
+      [
+        "Condition",
+        15
+      ],
+      [
+        "Local coverage",
+        13
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "HP05",
+    "type": "Sanitation",
+    "name": "Sanitation point S05",
+    "ward": 6,
+    "condition": 96,
+    "pop": 80,
+    "critical": 50,
+    "risk": "Low",
+    "confidence": 71,
+    "cost": 0.12,
+    "cat": "sanitation",
+    "x": 45,
+    "y": 40,
+    "connections": [],
+    "reports": 0,
+    "verified": "10 days ago",
+    "hazard": 28,
+    "action": "Sanitation upkeep",
+    "reason": [
+      [
+        "Condition",
+        15
+      ],
+      [
+        "Local coverage",
+        13
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "HP06",
+    "type": "Water",
+    "name": "Hand Pump H06",
+    "ward": 1,
+    "condition": 66,
+    "pop": 119,
+    "critical": 55,
+    "risk": "Low",
+    "confidence": 78,
+    "cost": 0.24,
+    "cat": "water",
+    "x": 68,
+    "y": 57,
+    "connections": [
+      "W01"
+    ],
+    "reports": 0,
+    "verified": "11 days ago",
+    "hazard": 39,
+    "action": "Preventive inspection",
+    "reason": [
+      [
+        "Condition",
+        15
+      ],
+      [
+        "Local coverage",
+        13
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "HP07",
+    "type": "Water",
+    "name": "Hand Pump H07",
+    "ward": 2,
+    "condition": 73,
+    "pop": 158,
+    "critical": 25,
+    "risk": "Low",
+    "confidence": 85,
+    "cost": 0.36,
+    "cat": "water",
+    "x": 11,
+    "y": 74,
+    "connections": [
+      "W01"
+    ],
+    "reports": 0,
+    "verified": "12 days ago",
+    "hazard": 15,
+    "action": "Preventive inspection",
+    "reason": [
+      [
+        "Condition",
+        15
+      ],
+      [
+        "Local coverage",
+        13
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "HP08",
+    "type": "Water",
+    "name": "Hand Pump H08",
+    "ward": 3,
+    "condition": 80,
+    "pop": 47,
+    "critical": 30,
+    "risk": "Low",
+    "confidence": 92,
+    "cost": 0.48,
+    "cat": "water",
+    "x": 34,
+    "y": 26,
+    "connections": [
+      "W02"
+    ],
+    "reports": 0,
+    "verified": "13 days ago",
+    "hazard": 26,
+    "action": "Preventive inspection",
+    "reason": [
+      [
+        "Condition",
+        15
+      ],
+      [
+        "Local coverage",
+        13
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "HP09",
+    "type": "Water",
+    "name": "Hand Pump H09",
+    "ward": 4,
+    "condition": 87,
+    "pop": 86,
+    "critical": 35,
+    "risk": "Medium",
+    "confidence": 68,
+    "cost": 0.6,
+    "cat": "water",
+    "x": 57,
+    "y": 43,
+    "connections": [
+      "W02"
+    ],
+    "reports": 0,
+    "verified": "14 days ago",
+    "hazard": 37,
+    "action": "Preventive inspection",
+    "reason": [
+      [
+        "Condition",
+        15
+      ],
+      [
+        "Local coverage",
+        13
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "HP10",
+    "type": "Sanitation",
+    "name": "Sanitation point S10",
+    "ward": 5,
+    "condition": 94,
+    "pop": 125,
+    "critical": 40,
+    "risk": "Low",
+    "confidence": 75,
+    "cost": 0.12,
+    "cat": "sanitation",
+    "x": 80,
+    "y": 60,
+    "connections": [],
+    "reports": 0,
+    "verified": "15 days ago",
+    "hazard": 13,
+    "action": "Sanitation upkeep",
+    "reason": [
+      [
+        "Condition",
+        15
+      ],
+      [
+        "Local coverage",
+        13
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "HP11",
+    "type": "Water",
+    "name": "Hand Pump H11",
+    "ward": 6,
+    "condition": 64,
+    "pop": 164,
+    "critical": 45,
+    "risk": "Low",
+    "confidence": 82,
+    "cost": 0.24,
+    "cat": "water",
+    "x": 23,
+    "y": 77,
+    "connections": [
+      "W03"
+    ],
+    "reports": 0,
+    "verified": "16 days ago",
+    "hazard": 24,
+    "action": "Preventive inspection",
+    "reason": [
+      [
+        "Condition",
+        15
+      ],
+      [
+        "Local coverage",
+        13
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "HP12",
+    "type": "Water",
+    "name": "Hand Pump H12",
+    "ward": 1,
+    "condition": 71,
+    "pop": 53,
+    "critical": 50,
+    "risk": "Low",
+    "confidence": 89,
+    "cost": 0.36,
+    "cat": "water",
+    "x": 46,
+    "y": 29,
+    "connections": [
+      "W01"
+    ],
+    "reports": 0,
+    "verified": "17 days ago",
+    "hazard": 35,
+    "action": "Preventive inspection",
+    "reason": [
+      [
+        "Condition",
+        15
+      ],
+      [
+        "Local coverage",
+        13
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "HP13",
+    "type": "Water",
+    "name": "Hand Pump H13",
+    "ward": 2,
+    "condition": 78,
+    "pop": 92,
+    "critical": 55,
+    "risk": "Low",
+    "confidence": 96,
+    "cost": 0.48,
+    "cat": "water",
+    "x": 69,
+    "y": 46,
+    "connections": [
+      "W01"
+    ],
+    "reports": 0,
+    "verified": "18 days ago",
+    "hazard": 11,
+    "action": "Preventive inspection",
+    "reason": [
+      [
+        "Condition",
+        15
+      ],
+      [
+        "Local coverage",
+        13
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "HP14",
+    "type": "Water",
+    "name": "Hand Pump H14",
+    "ward": 3,
+    "condition": 85,
+    "pop": 131,
+    "critical": 25,
+    "risk": "Low",
+    "confidence": 72,
+    "cost": 0.6,
+    "cat": "water",
+    "x": 12,
+    "y": 63,
+    "connections": [
+      "W02"
+    ],
+    "reports": 0,
+    "verified": "19 days ago",
+    "hazard": 22,
+    "action": "Preventive inspection",
+    "reason": [
+      [
+        "Condition",
+        15
+      ],
+      [
+        "Local coverage",
+        13
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "HP15",
+    "type": "Sanitation",
+    "name": "Sanitation point S15",
+    "ward": 4,
+    "condition": 92,
+    "pop": 170,
+    "critical": 30,
+    "risk": "Low",
+    "confidence": 79,
+    "cost": 0.12,
+    "cat": "sanitation",
+    "x": 35,
+    "y": 80,
+    "connections": [],
+    "reports": 0,
+    "verified": "20 days ago",
+    "hazard": 33,
+    "action": "Sanitation upkeep",
+    "reason": [
+      [
+        "Condition",
+        15
+      ],
+      [
+        "Local coverage",
+        13
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "HP16",
+    "type": "Water",
+    "name": "Hand Pump H16",
+    "ward": 5,
+    "condition": 62,
+    "pop": 59,
+    "critical": 35,
+    "risk": "Low",
+    "confidence": 86,
+    "cost": 0.24,
+    "cat": "water",
+    "x": 58,
+    "y": 32,
+    "connections": [
+      "W03"
+    ],
+    "reports": 0,
+    "verified": "21 days ago",
+    "hazard": 9,
+    "action": "Preventive inspection",
+    "reason": [
+      [
+        "Condition",
+        15
+      ],
+      [
+        "Local coverage",
+        13
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "HP17",
+    "type": "Water",
+    "name": "Hand Pump H17",
+    "ward": 6,
+    "condition": 69,
+    "pop": 98,
+    "critical": 40,
+    "risk": "Low",
+    "confidence": 93,
+    "cost": 0.36,
+    "cat": "water",
+    "x": 81,
+    "y": 49,
+    "connections": [
+      "W03"
+    ],
+    "reports": 0,
+    "verified": "22 days ago",
+    "hazard": 20,
+    "action": "Preventive inspection",
+    "reason": [
+      [
+        "Condition",
+        15
+      ],
+      [
+        "Local coverage",
+        13
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "HP18",
+    "type": "Water",
+    "name": "Hand Pump H18",
+    "ward": 1,
+    "condition": 76,
+    "pop": 137,
+    "critical": 45,
+    "risk": "Medium",
+    "confidence": 69,
+    "cost": 0.48,
+    "cat": "water",
+    "x": 24,
+    "y": 66,
+    "connections": [
+      "W01"
+    ],
+    "reports": 0,
+    "verified": "23 days ago",
+    "hazard": 31,
+    "action": "Preventive inspection",
+    "reason": [
+      [
+        "Condition",
+        15
+      ],
+      [
+        "Local coverage",
+        13
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "HP19",
+    "type": "Water",
+    "name": "Hand Pump H19",
+    "ward": 2,
+    "condition": 83,
+    "pop": 176,
+    "critical": 50,
+    "risk": "Low",
+    "confidence": 76,
+    "cost": 0.6,
+    "cat": "water",
+    "x": 47,
+    "y": 83,
+    "connections": [
+      "W01"
+    ],
+    "reports": 0,
+    "verified": "24 days ago",
+    "hazard": 42,
+    "action": "Preventive inspection",
+    "reason": [
+      [
+        "Condition",
+        15
+      ],
+      [
+        "Local coverage",
+        13
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "HP20",
+    "type": "Sanitation",
+    "name": "Sanitation point S20",
+    "ward": 3,
+    "condition": 90,
+    "pop": 65,
+    "critical": 55,
+    "risk": "Low",
+    "confidence": 83,
+    "cost": 0.12,
+    "cat": "sanitation",
+    "x": 70,
+    "y": 35,
+    "connections": [],
+    "reports": 0,
+    "verified": "25 days ago",
+    "hazard": 18,
+    "action": "Sanitation upkeep",
+    "reason": [
+      [
+        "Condition",
+        15
+      ],
+      [
+        "Local coverage",
+        13
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "HP21",
+    "type": "Water",
+    "name": "Hand Pump H21",
+    "ward": 4,
+    "condition": 97,
+    "pop": 104,
+    "critical": 25,
+    "risk": "Low",
+    "confidence": 90,
+    "cost": 0.24,
+    "cat": "water",
+    "x": 13,
+    "y": 52,
+    "connections": [
+      "W02"
+    ],
+    "reports": 0,
+    "verified": "26 days ago",
+    "hazard": 29,
+    "action": "Preventive inspection",
+    "reason": [
+      [
+        "Condition",
+        15
+      ],
+      [
+        "Local coverage",
+        13
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "HP22",
+    "type": "Water",
+    "name": "Hand Pump H22",
+    "ward": 5,
+    "condition": 67,
+    "pop": 143,
+    "critical": 30,
+    "risk": "Low",
+    "confidence": 97,
+    "cost": 0.36,
+    "cat": "water",
+    "x": 36,
+    "y": 69,
+    "connections": [
+      "W03"
+    ],
+    "reports": 0,
+    "verified": "27 days ago",
+    "hazard": 40,
+    "action": "Preventive inspection",
+    "reason": [
+      [
+        "Condition",
+        15
+      ],
+      [
+        "Local coverage",
+        13
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "HP23",
+    "type": "Water",
+    "name": "Hand Pump H23",
+    "ward": 6,
+    "condition": 74,
+    "pop": 182,
+    "critical": 35,
+    "risk": "Low",
+    "confidence": 73,
+    "cost": 0.48,
+    "cat": "water",
+    "x": 59,
+    "y": 21,
+    "connections": [
+      "W03"
+    ],
+    "reports": 0,
+    "verified": "28 days ago",
+    "hazard": 16,
+    "action": "Preventive inspection",
+    "reason": [
+      [
+        "Condition",
+        15
+      ],
+      [
+        "Local coverage",
+        13
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "HP24",
+    "type": "Water",
+    "name": "Hand Pump H24",
+    "ward": 1,
+    "condition": 81,
+    "pop": 71,
+    "critical": 40,
+    "risk": "Low",
+    "confidence": 80,
+    "cost": 0.6,
+    "cat": "water",
+    "x": 82,
+    "y": 38,
+    "connections": [
+      "W01"
+    ],
+    "reports": 0,
+    "verified": "29 days ago",
+    "hazard": 27,
+    "action": "Preventive inspection",
+    "reason": [
+      [
+        "Condition",
+        15
+      ],
+      [
+        "Local coverage",
+        13
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "HP25",
+    "type": "Sanitation",
+    "name": "Sanitation point S25",
+    "ward": 2,
+    "condition": 88,
+    "pop": 110,
+    "critical": 45,
+    "risk": "Low",
+    "confidence": 87,
+    "cost": 0.12,
+    "cat": "sanitation",
+    "x": 25,
+    "y": 55,
+    "connections": [],
+    "reports": 0,
+    "verified": "30 days ago",
+    "hazard": 38,
+    "action": "Sanitation upkeep",
+    "reason": [
+      [
+        "Condition",
+        15
+      ],
+      [
+        "Local coverage",
+        13
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "HP26",
+    "type": "Water",
+    "name": "Hand Pump H26",
+    "ward": 3,
+    "condition": 95,
+    "pop": 149,
+    "critical": 50,
+    "risk": "Low",
+    "confidence": 94,
+    "cost": 0.24,
+    "cat": "water",
+    "x": 48,
+    "y": 72,
+    "connections": [
+      "W02"
+    ],
+    "reports": 0,
+    "verified": "31 days ago",
+    "hazard": 14,
+    "action": "Preventive inspection",
+    "reason": [
+      [
+        "Condition",
+        15
+      ],
+      [
+        "Local coverage",
+        13
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "HP27",
+    "type": "Water",
+    "name": "Hand Pump H27",
+    "ward": 4,
+    "condition": 65,
+    "pop": 38,
+    "critical": 55,
+    "risk": "Medium",
+    "confidence": 70,
+    "cost": 0.36,
+    "cat": "water",
+    "x": 71,
+    "y": 24,
+    "connections": [
+      "W02"
+    ],
+    "reports": 0,
+    "verified": "32 days ago",
+    "hazard": 25,
+    "action": "Preventive inspection",
+    "reason": [
+      [
+        "Condition",
+        15
+      ],
+      [
+        "Local coverage",
+        13
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "HP28",
+    "type": "Water",
+    "name": "Hand Pump H28",
+    "ward": 5,
+    "condition": 72,
+    "pop": 77,
+    "critical": 25,
+    "risk": "Low",
+    "confidence": 77,
+    "cost": 0.48,
+    "cat": "water",
+    "x": 14,
+    "y": 41,
+    "connections": [
+      "W03"
+    ],
+    "reports": 0,
+    "verified": "5 days ago",
+    "hazard": 36,
+    "action": "Preventive inspection",
+    "reason": [
+      [
+        "Condition",
+        15
+      ],
+      [
+        "Local coverage",
+        13
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "HP29",
+    "type": "Water",
+    "name": "Hand Pump H29",
+    "ward": 6,
+    "condition": 79,
+    "pop": 116,
+    "critical": 30,
+    "risk": "Low",
+    "confidence": 84,
+    "cost": 0.6,
+    "cat": "water",
+    "x": 37,
+    "y": 58,
+    "connections": [
+      "W03"
+    ],
+    "reports": 0,
+    "verified": "6 days ago",
+    "hazard": 12,
+    "action": "Preventive inspection",
+    "reason": [
+      [
+        "Condition",
+        15
+      ],
+      [
+        "Local coverage",
+        13
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "HP30",
+    "type": "Sanitation",
+    "name": "Sanitation point S30",
+    "ward": 1,
+    "condition": 86,
+    "pop": 155,
+    "critical": 35,
+    "risk": "Low",
+    "confidence": 91,
+    "cost": 0.12,
+    "cat": "sanitation",
+    "x": 60,
+    "y": 75,
+    "connections": [],
+    "reports": 0,
+    "verified": "7 days ago",
+    "hazard": 23,
+    "action": "Sanitation upkeep",
+    "reason": [
+      [
+        "Condition",
+        15
+      ],
+      [
+        "Local coverage",
+        13
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "HP31",
+    "type": "Water",
+    "name": "Hand Pump H31",
+    "ward": 2,
+    "condition": 93,
+    "pop": 44,
+    "critical": 40,
+    "risk": "Low",
+    "confidence": 67,
+    "cost": 0.24,
+    "cat": "water",
+    "x": 83,
+    "y": 27,
+    "connections": [
+      "W01"
+    ],
+    "reports": 0,
+    "verified": "8 days ago",
+    "hazard": 34,
+    "action": "Preventive inspection",
+    "reason": [
+      [
+        "Condition",
+        15
+      ],
+      [
+        "Local coverage",
+        13
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "HP32",
+    "type": "Water",
+    "name": "Hand Pump H32",
+    "ward": 3,
+    "condition": 63,
+    "pop": 83,
+    "critical": 45,
+    "risk": "Low",
+    "confidence": 74,
+    "cost": 0.36,
+    "cat": "water",
+    "x": 26,
+    "y": 44,
+    "connections": [
+      "W02"
+    ],
+    "reports": 0,
+    "verified": "9 days ago",
+    "hazard": 10,
+    "action": "Preventive inspection",
+    "reason": [
+      [
+        "Condition",
+        15
+      ],
+      [
+        "Local coverage",
+        13
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "HP33",
+    "type": "Water",
+    "name": "Hand Pump H33",
+    "ward": 4,
+    "condition": 70,
+    "pop": 122,
+    "critical": 50,
+    "risk": "Low",
+    "confidence": 81,
+    "cost": 0.48,
+    "cat": "water",
+    "x": 49,
+    "y": 61,
+    "connections": [
+      "W02"
+    ],
+    "reports": 0,
+    "verified": "10 days ago",
+    "hazard": 21,
+    "action": "Preventive inspection",
+    "reason": [
+      [
+        "Condition",
+        15
+      ],
+      [
+        "Local coverage",
+        13
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "HP34",
+    "type": "Water",
+    "name": "Hand Pump H34",
+    "ward": 5,
+    "condition": 77,
+    "pop": 161,
+    "critical": 55,
+    "risk": "Low",
+    "confidence": 88,
+    "cost": 0.6,
+    "cat": "water",
+    "x": 72,
+    "y": 78,
+    "connections": [
+      "W03"
+    ],
+    "reports": 0,
+    "verified": "11 days ago",
+    "hazard": 32,
+    "action": "Preventive inspection",
+    "reason": [
+      [
+        "Condition",
+        15
+      ],
+      [
+        "Local coverage",
+        13
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "HP35",
+    "type": "Sanitation",
+    "name": "Sanitation point S35",
+    "ward": 6,
+    "condition": 84,
+    "pop": 50,
+    "critical": 25,
+    "risk": "Low",
+    "confidence": 95,
+    "cost": 0.12,
+    "cat": "sanitation",
+    "x": 15,
+    "y": 30,
+    "connections": [],
+    "reports": 0,
+    "verified": "12 days ago",
+    "hazard": 8,
+    "action": "Sanitation upkeep",
+    "reason": [
+      [
+        "Condition",
+        15
+      ],
+      [
+        "Local coverage",
+        13
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "HP36",
+    "type": "Water",
+    "name": "Hand Pump H36",
+    "ward": 1,
+    "condition": 91,
+    "pop": 89,
+    "critical": 30,
+    "risk": "Medium",
+    "confidence": 71,
+    "cost": 0.24,
+    "cat": "water",
+    "x": 38,
+    "y": 47,
+    "connections": [
+      "W01"
+    ],
+    "reports": 0,
+    "verified": "13 days ago",
+    "hazard": 19,
+    "action": "Preventive inspection",
+    "reason": [
+      [
+        "Condition",
+        15
+      ],
+      [
+        "Local coverage",
+        13
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "HP37",
+    "type": "Water",
+    "name": "Hand Pump H37",
+    "ward": 2,
+    "condition": 61,
+    "pop": 128,
+    "critical": 35,
+    "risk": "Low",
+    "confidence": 78,
+    "cost": 0.36,
+    "cat": "water",
+    "x": 61,
+    "y": 64,
+    "connections": [
+      "W01"
+    ],
+    "reports": 0,
+    "verified": "14 days ago",
+    "hazard": 30,
+    "action": "Preventive inspection",
+    "reason": [
+      [
+        "Condition",
+        15
+      ],
+      [
+        "Local coverage",
+        13
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "HP38",
+    "type": "Water",
+    "name": "Hand Pump H38",
+    "ward": 3,
+    "condition": 68,
+    "pop": 167,
+    "critical": 40,
+    "risk": "Low",
+    "confidence": 85,
+    "cost": 0.48,
+    "cat": "water",
+    "x": 84,
+    "y": 81,
+    "connections": [
+      "W02"
+    ],
+    "reports": 0,
+    "verified": "15 days ago",
+    "hazard": 41,
+    "action": "Preventive inspection",
+    "reason": [
+      [
+        "Condition",
+        15
+      ],
+      [
+        "Local coverage",
+        13
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "HP39",
+    "type": "Water",
+    "name": "Hand Pump H39",
+    "ward": 4,
+    "condition": 75,
+    "pop": 56,
+    "critical": 45,
+    "risk": "Low",
+    "confidence": 92,
+    "cost": 0.6,
+    "cat": "water",
+    "x": 27,
+    "y": 33,
+    "connections": [
+      "W02"
+    ],
+    "reports": 0,
+    "verified": "16 days ago",
+    "hazard": 17,
+    "action": "Preventive inspection",
+    "reason": [
+      [
+        "Condition",
+        15
+      ],
+      [
+        "Local coverage",
+        13
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "HP40",
+    "type": "Sanitation",
+    "name": "Sanitation point S40",
+    "ward": 5,
+    "condition": 82,
+    "pop": 95,
+    "critical": 50,
+    "risk": "Low",
+    "confidence": 68,
+    "cost": 0.12,
+    "cat": "sanitation",
+    "x": 50,
+    "y": 50,
+    "connections": [],
+    "reports": 0,
+    "verified": "17 days ago",
+    "hazard": 28,
+    "action": "Sanitation upkeep",
+    "reason": [
+      [
+        "Condition",
+        15
+      ],
+      [
+        "Local coverage",
+        13
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "HP41",
+    "type": "Water",
+    "name": "Hand Pump H41",
+    "ward": 6,
+    "condition": 89,
+    "pop": 134,
+    "critical": 55,
+    "risk": "Low",
+    "confidence": 75,
+    "cost": 0.24,
+    "cat": "water",
+    "x": 73,
+    "y": 67,
+    "connections": [
+      "W03"
+    ],
+    "reports": 0,
+    "verified": "18 days ago",
+    "hazard": 39,
+    "action": "Preventive inspection",
+    "reason": [
+      [
+        "Condition",
+        15
+      ],
+      [
+        "Local coverage",
+        13
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "HP42",
+    "type": "Water",
+    "name": "Hand Pump H42",
+    "ward": 1,
+    "condition": 96,
+    "pop": 173,
+    "critical": 25,
+    "risk": "Low",
+    "confidence": 82,
+    "cost": 0.36,
+    "cat": "water",
+    "x": 16,
+    "y": 84,
+    "connections": [
+      "W01"
+    ],
+    "reports": 0,
+    "verified": "19 days ago",
+    "hazard": 15,
+    "action": "Preventive inspection",
+    "reason": [
+      [
+        "Condition",
+        15
+      ],
+      [
+        "Local coverage",
+        13
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "HP43",
+    "type": "Water",
+    "name": "Hand Pump H43",
+    "ward": 2,
+    "condition": 66,
+    "pop": 62,
+    "critical": 30,
+    "risk": "Low",
+    "confidence": 89,
+    "cost": 0.48,
+    "cat": "water",
+    "x": 39,
+    "y": 36,
+    "connections": [
+      "W01"
+    ],
+    "reports": 0,
+    "verified": "20 days ago",
+    "hazard": 26,
+    "action": "Preventive inspection",
+    "reason": [
+      [
+        "Condition",
+        15
+      ],
+      [
+        "Local coverage",
+        13
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "HP44",
+    "type": "Water",
+    "name": "Hand Pump H44",
+    "ward": 3,
+    "condition": 73,
+    "pop": 101,
+    "critical": 35,
+    "risk": "Low",
+    "confidence": 96,
+    "cost": 0.6,
+    "cat": "water",
+    "x": 62,
+    "y": 53,
+    "connections": [
+      "W02"
+    ],
+    "reports": 0,
+    "verified": "21 days ago",
+    "hazard": 37,
+    "action": "Preventive inspection",
+    "reason": [
+      [
+        "Condition",
+        15
+      ],
+      [
+        "Local coverage",
+        13
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "HP45",
+    "type": "Sanitation",
+    "name": "Sanitation point S45",
+    "ward": 4,
+    "condition": 80,
+    "pop": 140,
+    "critical": 40,
+    "risk": "Medium",
+    "confidence": 72,
+    "cost": 0.12,
+    "cat": "sanitation",
+    "x": 85,
+    "y": 70,
+    "connections": [],
+    "reports": 0,
+    "verified": "22 days ago",
+    "hazard": 13,
+    "action": "Sanitation upkeep",
+    "reason": [
+      [
+        "Condition",
+        15
+      ],
+      [
+        "Local coverage",
+        13
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "HP46",
+    "type": "Water",
+    "name": "Hand Pump H46",
+    "ward": 5,
+    "condition": 87,
+    "pop": 179,
+    "critical": 45,
+    "risk": "Low",
+    "confidence": 79,
+    "cost": 0.24,
+    "cat": "water",
+    "x": 28,
+    "y": 22,
+    "connections": [
+      "W03"
+    ],
+    "reports": 0,
+    "verified": "23 days ago",
+    "hazard": 24,
+    "action": "Preventive inspection",
+    "reason": [
+      [
+        "Condition",
+        15
+      ],
+      [
+        "Local coverage",
+        13
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "HP47",
+    "type": "Water",
+    "name": "Hand Pump H47",
+    "ward": 6,
+    "condition": 94,
+    "pop": 68,
+    "critical": 50,
+    "risk": "Low",
+    "confidence": 86,
+    "cost": 0.36,
+    "cat": "water",
+    "x": 51,
+    "y": 39,
+    "connections": [
+      "W03"
+    ],
+    "reports": 0,
+    "verified": "24 days ago",
+    "hazard": 35,
+    "action": "Preventive inspection",
+    "reason": [
+      [
+        "Condition",
+        15
+      ],
+      [
+        "Local coverage",
+        13
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "HP48",
+    "type": "Water",
+    "name": "Hand Pump H48",
+    "ward": 1,
+    "condition": 64,
+    "pop": 107,
+    "critical": 55,
+    "risk": "Low",
+    "confidence": 93,
+    "cost": 0.48,
+    "cat": "water",
+    "x": 74,
+    "y": 56,
+    "connections": [
+      "W01"
+    ],
+    "reports": 0,
+    "verified": "25 days ago",
+    "hazard": 11,
+    "action": "Preventive inspection",
+    "reason": [
+      [
+        "Condition",
+        15
+      ],
+      [
+        "Local coverage",
+        13
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "HP49",
+    "type": "Water",
+    "name": "Hand Pump H49",
+    "ward": 2,
+    "condition": 71,
+    "pop": 146,
+    "critical": 25,
+    "risk": "Low",
+    "confidence": 69,
+    "cost": 0.6,
+    "cat": "water",
+    "x": 17,
+    "y": 73,
+    "connections": [
+      "W01"
+    ],
+    "reports": 0,
+    "verified": "26 days ago",
+    "hazard": 22,
+    "action": "Preventive inspection",
+    "reason": [
+      [
+        "Condition",
+        15
+      ],
+      [
+        "Local coverage",
+        13
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "HP50",
+    "type": "Sanitation",
+    "name": "Sanitation point S50",
+    "ward": 3,
+    "condition": 78,
+    "pop": 35,
+    "critical": 30,
+    "risk": "Low",
+    "confidence": 76,
+    "cost": 0.12,
+    "cat": "sanitation",
+    "x": 40,
+    "y": 25,
+    "connections": [],
+    "reports": 0,
+    "verified": "27 days ago",
+    "hazard": 33,
+    "action": "Sanitation upkeep",
+    "reason": [
+      [
+        "Condition",
+        15
+      ],
+      [
+        "Local coverage",
+        13
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "W03",
+    "type": "Water",
+    "name": "Water Tank W03",
+    "ward": 5,
+    "condition": 78,
+    "pop": 860,
+    "critical": 70,
+    "risk": "Medium",
+    "confidence": 89,
+    "cost": 2.3,
+    "cat": "water",
+    "x": 69,
+    "y": 72,
+    "connections": [
+      "R11",
+      "D09"
+    ],
+    "reports": 0,
+    "verified": "10 days ago",
+    "hazard": 42,
+    "action": "Inspect distribution valves",
+    "reason": [
+      [
+        "Population served",
+        24
+      ],
+      [
+        "Service dependency",
+        20
+      ],
+      [
+        "Condition",
+        12
+      ],
+      [
+        "Hazard",
+        14
+      ]
+    ]
+  },
+  {
+    "id": "S03",
+    "type": "Education",
+    "name": "Upper Primary School S03",
+    "ward": 6,
+    "condition": 86,
+    "pop": 390,
+    "critical": 62,
+    "risk": "Low",
+    "confidence": 88,
+    "cost": 1.3,
+    "cat": "education",
+    "x": 87,
+    "y": 37,
+    "connections": [
+      "R11"
+    ],
+    "reports": 0,
+    "verified": "17 days ago",
+    "hazard": 20,
+    "action": "Routine school maintenance",
+    "reason": [
+      [
+        "Student dependency",
+        20
+      ],
+      [
+        "Access",
+        16
+      ],
+      [
+        "Condition",
+        14
+      ],
+      [
+        "Service role",
+        12
+      ]
+    ]
+  },
+  {
+    "id": "A02",
+    "type": "Education",
+    "name": "Anganwadi A02",
+    "ward": 5,
+    "condition": 81,
+    "pop": 105,
+    "critical": 47,
+    "risk": "Low",
+    "confidence": 84,
+    "cost": 0.6,
+    "cat": "education",
+    "x": 62,
+    "y": 69,
+    "connections": [
+      "R11"
+    ],
+    "reports": 0,
+    "verified": "13 days ago",
+    "hazard": 31,
+    "action": "Routine facility maintenance",
+    "reason": [
+      [
+        "Child services",
+        18
+      ],
+      [
+        "Condition",
+        12
+      ],
+      [
+        "Access",
+        9
+      ],
+      [
+        "Local coverage",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "SL31",
+    "type": "Streetlight",
+    "name": "Streetlight Cluster SL31",
+    "ward": 2,
+    "condition": 57,
+    "pop": 99,
+    "critical": 37,
+    "risk": "Low",
+    "confidence": 72,
+    "cost": 0.3,
+    "cat": "sanitation",
+    "x": 29,
+    "y": 41,
+    "connections": [
+      "R03"
+    ],
+    "reports": 0,
+    "verified": "5 days ago",
+    "hazard": 15,
+    "action": "Repair failed luminaires",
+    "reason": [
+      [
+        "Public safety",
+        16
+      ],
+      [
+        "Condition",
+        14
+      ],
+      [
+        "Population served",
+        11
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "SL32",
+    "type": "Streetlight",
+    "name": "Streetlight Cluster SL32",
+    "ward": 3,
+    "condition": 66,
+    "pop": 128,
+    "critical": 42,
+    "risk": "Low",
+    "confidence": 79,
+    "cost": 0.42,
+    "cat": "sanitation",
+    "x": 48,
+    "y": 64,
+    "connections": [
+      "R22"
+    ],
+    "reports": 0,
+    "verified": "6 days ago",
+    "hazard": 22,
+    "action": "Repair failed luminaires",
+    "reason": [
+      [
+        "Public safety",
+        16
+      ],
+      [
+        "Condition",
+        14
+      ],
+      [
+        "Population served",
+        11
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "SL33",
+    "type": "Streetlight",
+    "name": "Streetlight Cluster SL33",
+    "ward": 4,
+    "condition": 75,
+    "pop": 157,
+    "critical": 47,
+    "risk": "Low",
+    "confidence": 86,
+    "cost": 0.54,
+    "cat": "sanitation",
+    "x": 67,
+    "y": 19,
+    "connections": [
+      "R07"
+    ],
+    "reports": 0,
+    "verified": "7 days ago",
+    "hazard": 29,
+    "action": "Repair failed luminaires",
+    "reason": [
+      [
+        "Public safety",
+        16
+      ],
+      [
+        "Condition",
+        14
+      ],
+      [
+        "Population served",
+        11
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "SL34",
+    "type": "Streetlight",
+    "name": "Streetlight Cluster SL34",
+    "ward": 5,
+    "condition": 84,
+    "pop": 186,
+    "critical": 52,
+    "risk": "Low",
+    "confidence": 93,
+    "cost": 0.18,
+    "cat": "sanitation",
+    "x": 86,
+    "y": 42,
+    "connections": [
+      "R24"
+    ],
+    "reports": 0,
+    "verified": "8 days ago",
+    "hazard": 36,
+    "action": "Repair failed luminaires",
+    "reason": [
+      [
+        "Public safety",
+        16
+      ],
+      [
+        "Condition",
+        14
+      ],
+      [
+        "Population served",
+        11
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "SL35",
+    "type": "Streetlight",
+    "name": "Streetlight Cluster SL35",
+    "ward": 6,
+    "condition": 93,
+    "pop": 215,
+    "critical": 57,
+    "risk": "Low",
+    "confidence": 69,
+    "cost": 0.3,
+    "cat": "sanitation",
+    "x": 25,
+    "y": 65,
+    "connections": [
+      "R11"
+    ],
+    "reports": 0,
+    "verified": "9 days ago",
+    "hazard": 11,
+    "action": "Repair failed luminaires",
+    "reason": [
+      [
+        "Public safety",
+        16
+      ],
+      [
+        "Condition",
+        14
+      ],
+      [
+        "Population served",
+        11
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "SL36",
+    "type": "Streetlight",
+    "name": "Streetlight Cluster SL36",
+    "ward": 1,
+    "condition": 54,
+    "pop": 244,
+    "critical": 62,
+    "risk": "Medium",
+    "confidence": 76,
+    "cost": 0.42,
+    "cat": "sanitation",
+    "x": 44,
+    "y": 20,
+    "connections": [
+      "R26"
+    ],
+    "reports": 0,
+    "verified": "10 days ago",
+    "hazard": 18,
+    "action": "Repair failed luminaires",
+    "reason": [
+      [
+        "Public safety",
+        16
+      ],
+      [
+        "Condition",
+        14
+      ],
+      [
+        "Population served",
+        11
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "SL37",
+    "type": "Streetlight",
+    "name": "Streetlight Cluster SL37",
+    "ward": 2,
+    "condition": 63,
+    "pop": 273,
+    "critical": 67,
+    "risk": "Low",
+    "confidence": 83,
+    "cost": 0.54,
+    "cat": "sanitation",
+    "x": 63,
+    "y": 43,
+    "connections": [
+      "R03"
+    ],
+    "reports": 0,
+    "verified": "11 days ago",
+    "hazard": 25,
+    "action": "Repair failed luminaires",
+    "reason": [
+      [
+        "Public safety",
+        16
+      ],
+      [
+        "Condition",
+        14
+      ],
+      [
+        "Population served",
+        11
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "SL38",
+    "type": "Streetlight",
+    "name": "Streetlight Cluster SL38",
+    "ward": 3,
+    "condition": 72,
+    "pop": 82,
+    "critical": 32,
+    "risk": "Low",
+    "confidence": 90,
+    "cost": 0.18,
+    "cat": "sanitation",
+    "x": 82,
+    "y": 66,
+    "connections": [
+      "R22"
+    ],
+    "reports": 1,
+    "verified": "12 days ago",
+    "hazard": 32,
+    "action": "Repair failed luminaires",
+    "reason": [
+      [
+        "Public safety",
+        16
+      ],
+      [
+        "Condition",
+        14
+      ],
+      [
+        "Population served",
+        11
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "SL39",
+    "type": "Streetlight",
+    "name": "Streetlight Cluster SL39",
+    "ward": 4,
+    "condition": 81,
+    "pop": 111,
+    "critical": 37,
+    "risk": "Low",
+    "confidence": 66,
+    "cost": 0.3,
+    "cat": "sanitation",
+    "x": 21,
+    "y": 21,
+    "connections": [
+      "R07"
+    ],
+    "reports": 0,
+    "verified": "13 days ago",
+    "hazard": 39,
+    "action": "Repair failed luminaires",
+    "reason": [
+      [
+        "Public safety",
+        16
+      ],
+      [
+        "Condition",
+        14
+      ],
+      [
+        "Population served",
+        11
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "SL40",
+    "type": "Streetlight",
+    "name": "Streetlight Cluster SL40",
+    "ward": 5,
+    "condition": 90,
+    "pop": 140,
+    "critical": 42,
+    "risk": "Low",
+    "confidence": 73,
+    "cost": 0.42,
+    "cat": "sanitation",
+    "x": 40,
+    "y": 44,
+    "connections": [
+      "R24"
+    ],
+    "reports": 0,
+    "verified": "14 days ago",
+    "hazard": 14,
+    "action": "Repair failed luminaires",
+    "reason": [
+      [
+        "Public safety",
+        16
+      ],
+      [
+        "Condition",
+        14
+      ],
+      [
+        "Population served",
+        11
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "SL41",
+    "type": "Streetlight",
+    "name": "Streetlight Cluster SL41",
+    "ward": 6,
+    "condition": 51,
+    "pop": 169,
+    "critical": 47,
+    "risk": "Low",
+    "confidence": 80,
+    "cost": 0.54,
+    "cat": "sanitation",
+    "x": 59,
+    "y": 67,
+    "connections": [
+      "R11"
+    ],
+    "reports": 0,
+    "verified": "15 days ago",
+    "hazard": 21,
+    "action": "Repair failed luminaires",
+    "reason": [
+      [
+        "Public safety",
+        16
+      ],
+      [
+        "Condition",
+        14
+      ],
+      [
+        "Population served",
+        11
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "SL42",
+    "type": "Streetlight",
+    "name": "Streetlight Cluster SL42",
+    "ward": 1,
+    "condition": 60,
+    "pop": 198,
+    "critical": 52,
+    "risk": "Medium",
+    "confidence": 87,
+    "cost": 0.18,
+    "cat": "sanitation",
+    "x": 78,
+    "y": 22,
+    "connections": [
+      "R26"
+    ],
+    "reports": 0,
+    "verified": "16 days ago",
+    "hazard": 28,
+    "action": "Repair failed luminaires",
+    "reason": [
+      [
+        "Public safety",
+        16
+      ],
+      [
+        "Condition",
+        14
+      ],
+      [
+        "Population served",
+        11
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "SL43",
+    "type": "Streetlight",
+    "name": "Streetlight Cluster SL43",
+    "ward": 2,
+    "condition": 69,
+    "pop": 227,
+    "critical": 57,
+    "risk": "Low",
+    "confidence": 94,
+    "cost": 0.3,
+    "cat": "sanitation",
+    "x": 17,
+    "y": 45,
+    "connections": [
+      "R03"
+    ],
+    "reports": 0,
+    "verified": "17 days ago",
+    "hazard": 35,
+    "action": "Repair failed luminaires",
+    "reason": [
+      [
+        "Public safety",
+        16
+      ],
+      [
+        "Condition",
+        14
+      ],
+      [
+        "Population served",
+        11
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "SL44",
+    "type": "Streetlight",
+    "name": "Streetlight Cluster SL44",
+    "ward": 3,
+    "condition": 78,
+    "pop": 256,
+    "critical": 62,
+    "risk": "Low",
+    "confidence": 70,
+    "cost": 0.42,
+    "cat": "sanitation",
+    "x": 36,
+    "y": 68,
+    "connections": [
+      "R22"
+    ],
+    "reports": 0,
+    "verified": "18 days ago",
+    "hazard": 10,
+    "action": "Repair failed luminaires",
+    "reason": [
+      [
+        "Public safety",
+        16
+      ],
+      [
+        "Condition",
+        14
+      ],
+      [
+        "Population served",
+        11
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "SL45",
+    "type": "Streetlight",
+    "name": "Streetlight Cluster SL45",
+    "ward": 4,
+    "condition": 87,
+    "pop": 285,
+    "critical": 67,
+    "risk": "Low",
+    "confidence": 77,
+    "cost": 0.54,
+    "cat": "sanitation",
+    "x": 55,
+    "y": 23,
+    "connections": [
+      "R07"
+    ],
+    "reports": 0,
+    "verified": "19 days ago",
+    "hazard": 17,
+    "action": "Repair failed luminaires",
+    "reason": [
+      [
+        "Public safety",
+        16
+      ],
+      [
+        "Condition",
+        14
+      ],
+      [
+        "Population served",
+        11
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "SL46",
+    "type": "Streetlight",
+    "name": "Streetlight Cluster SL46",
+    "ward": 5,
+    "condition": 48,
+    "pop": 94,
+    "critical": 32,
+    "risk": "Low",
+    "confidence": 84,
+    "cost": 0.18,
+    "cat": "sanitation",
+    "x": 74,
+    "y": 46,
+    "connections": [
+      "R24"
+    ],
+    "reports": 1,
+    "verified": "20 days ago",
+    "hazard": 24,
+    "action": "Repair failed luminaires",
+    "reason": [
+      [
+        "Public safety",
+        16
+      ],
+      [
+        "Condition",
+        14
+      ],
+      [
+        "Population served",
+        11
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "SL47",
+    "type": "Streetlight",
+    "name": "Streetlight Cluster SL47",
+    "ward": 6,
+    "condition": 57,
+    "pop": 123,
+    "critical": 37,
+    "risk": "Low",
+    "confidence": 91,
+    "cost": 0.3,
+    "cat": "sanitation",
+    "x": 13,
+    "y": 69,
+    "connections": [
+      "R11"
+    ],
+    "reports": 0,
+    "verified": "21 days ago",
+    "hazard": 31,
+    "action": "Repair failed luminaires",
+    "reason": [
+      [
+        "Public safety",
+        16
+      ],
+      [
+        "Condition",
+        14
+      ],
+      [
+        "Population served",
+        11
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "SL48",
+    "type": "Streetlight",
+    "name": "Streetlight Cluster SL48",
+    "ward": 1,
+    "condition": 66,
+    "pop": 152,
+    "critical": 42,
+    "risk": "Medium",
+    "confidence": 67,
+    "cost": 0.42,
+    "cat": "sanitation",
+    "x": 32,
+    "y": 24,
+    "connections": [
+      "R26"
+    ],
+    "reports": 0,
+    "verified": "22 days ago",
+    "hazard": 38,
+    "action": "Repair failed luminaires",
+    "reason": [
+      [
+        "Public safety",
+        16
+      ],
+      [
+        "Condition",
+        14
+      ],
+      [
+        "Population served",
+        11
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "SL49",
+    "type": "Streetlight",
+    "name": "Streetlight Cluster SL49",
+    "ward": 2,
+    "condition": 75,
+    "pop": 181,
+    "critical": 47,
+    "risk": "Low",
+    "confidence": 74,
+    "cost": 0.54,
+    "cat": "sanitation",
+    "x": 51,
+    "y": 47,
+    "connections": [
+      "R03"
+    ],
+    "reports": 0,
+    "verified": "23 days ago",
+    "hazard": 13,
+    "action": "Repair failed luminaires",
+    "reason": [
+      [
+        "Public safety",
+        16
+      ],
+      [
+        "Condition",
+        14
+      ],
+      [
+        "Population served",
+        11
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "SL50",
+    "type": "Streetlight",
+    "name": "Streetlight Cluster SL50",
+    "ward": 3,
+    "condition": 84,
+    "pop": 210,
+    "critical": 52,
+    "risk": "Low",
+    "confidence": 81,
+    "cost": 0.18,
+    "cat": "sanitation",
+    "x": 70,
+    "y": 70,
+    "connections": [
+      "R22"
+    ],
+    "reports": 0,
+    "verified": "24 days ago",
+    "hazard": 20,
+    "action": "Repair failed luminaires",
+    "reason": [
+      [
+        "Public safety",
+        16
+      ],
+      [
+        "Condition",
+        14
+      ],
+      [
+        "Population served",
+        11
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "SL51",
+    "type": "Streetlight",
+    "name": "Streetlight Cluster SL51",
+    "ward": 4,
+    "condition": 93,
+    "pop": 239,
+    "critical": 57,
+    "risk": "Low",
+    "confidence": 88,
+    "cost": 0.3,
+    "cat": "sanitation",
+    "x": 89,
+    "y": 25,
+    "connections": [
+      "R07"
+    ],
+    "reports": 0,
+    "verified": "25 days ago",
+    "hazard": 27,
+    "action": "Repair failed luminaires",
+    "reason": [
+      [
+        "Public safety",
+        16
+      ],
+      [
+        "Condition",
+        14
+      ],
+      [
+        "Population served",
+        11
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "SL52",
+    "type": "Streetlight",
+    "name": "Streetlight Cluster SL52",
+    "ward": 5,
+    "condition": 54,
+    "pop": 268,
+    "critical": 62,
+    "risk": "Low",
+    "confidence": 95,
+    "cost": 0.42,
+    "cat": "sanitation",
+    "x": 28,
+    "y": 48,
+    "connections": [
+      "R24"
+    ],
+    "reports": 0,
+    "verified": "26 days ago",
+    "hazard": 34,
+    "action": "Repair failed luminaires",
+    "reason": [
+      [
+        "Public safety",
+        16
+      ],
+      [
+        "Condition",
+        14
+      ],
+      [
+        "Population served",
+        11
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "SL53",
+    "type": "Streetlight",
+    "name": "Streetlight Cluster SL53",
+    "ward": 6,
+    "condition": 63,
+    "pop": 77,
+    "critical": 67,
+    "risk": "Low",
+    "confidence": 71,
+    "cost": 0.54,
+    "cat": "sanitation",
+    "x": 47,
+    "y": 71,
+    "connections": [
+      "R11"
+    ],
+    "reports": 0,
+    "verified": "27 days ago",
+    "hazard": 9,
+    "action": "Repair failed luminaires",
+    "reason": [
+      [
+        "Public safety",
+        16
+      ],
+      [
+        "Condition",
+        14
+      ],
+      [
+        "Population served",
+        11
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "SL54",
+    "type": "Streetlight",
+    "name": "Streetlight Cluster SL54",
+    "ward": 1,
+    "condition": 72,
+    "pop": 106,
+    "critical": 32,
+    "risk": "Medium",
+    "confidence": 78,
+    "cost": 0.18,
+    "cat": "sanitation",
+    "x": 66,
+    "y": 26,
+    "connections": [
+      "R26"
+    ],
+    "reports": 1,
+    "verified": "4 days ago",
+    "hazard": 16,
+    "action": "Repair failed luminaires",
+    "reason": [
+      [
+        "Public safety",
+        16
+      ],
+      [
+        "Condition",
+        14
+      ],
+      [
+        "Population served",
+        11
+      ],
+      [
+        "Evidence recency",
+        8
+      ]
+    ]
+  },
+  {
+    "id": "CF01",
+    "type": "Public Facility",
+    "name": "Market Shelter CF01",
+    "ward": 2,
+    "condition": 69,
+    "pop": 141,
+    "critical": 34,
+    "risk": "Low",
+    "confidence": 73,
+    "cost": 0.52,
+    "cat": "sanitation",
+    "x": 31,
+    "y": 39,
+    "connections": [
+      "R03"
+    ],
+    "reports": 0,
+    "verified": "7 days ago",
+    "hazard": 18,
+    "action": "Schedule public facility upkeep",
+    "reason": [
+      [
+        "Community service",
+        16
+      ],
+      [
+        "Condition",
+        14
+      ],
+      [
+        "Population served",
+        12
+      ]
+    ]
+  },
+  {
+    "id": "CF02",
+    "type": "Public Facility",
+    "name": "Public Toilet CF02",
+    "ward": 3,
+    "condition": 74,
+    "pop": 182,
+    "critical": 38,
+    "risk": "Low",
+    "confidence": 76,
+    "cost": 0.74,
+    "cat": "sanitation",
+    "x": 48,
+    "y": 60,
+    "connections": [
+      "R22"
+    ],
+    "reports": 0,
+    "verified": "8 days ago",
+    "hazard": 26,
+    "action": "Schedule public facility upkeep",
+    "reason": [
+      [
+        "Community service",
+        16
+      ],
+      [
+        "Condition",
+        14
+      ],
+      [
+        "Population served",
+        12
+      ]
+    ]
+  },
+  {
+    "id": "CF03",
+    "type": "Public Facility",
+    "name": "Solid Waste Point CF03",
+    "ward": 4,
+    "condition": 79,
+    "pop": 223,
+    "critical": 42,
+    "risk": "Low",
+    "confidence": 79,
+    "cost": 0.96,
+    "cat": "sanitation",
+    "x": 65,
+    "y": 81,
+    "connections": [
+      "R07"
+    ],
+    "reports": 0,
+    "verified": "9 days ago",
+    "hazard": 34,
+    "action": "Schedule public facility upkeep",
+    "reason": [
+      [
+        "Community service",
+        16
+      ],
+      [
+        "Condition",
+        14
+      ],
+      [
+        "Population served",
+        12
+      ]
+    ]
+  },
+  {
+    "id": "CF04",
+    "type": "Public Facility",
+    "name": "Community Hall CF04",
+    "ward": 5,
+    "condition": 84,
+    "pop": 264,
+    "critical": 46,
+    "risk": "Low",
+    "confidence": 82,
+    "cost": 1.18,
+    "cat": "sanitation",
+    "x": 82,
+    "y": 32,
+    "connections": [
+      "R24"
+    ],
+    "reports": 0,
+    "verified": "10 days ago",
+    "hazard": 42,
+    "action": "Schedule public facility upkeep",
+    "reason": [
+      [
+        "Community service",
+        16
+      ],
+      [
+        "Condition",
+        14
+      ],
+      [
+        "Population served",
+        12
+      ]
+    ]
+  },
+  {
+    "id": "CF05",
+    "type": "Public Facility",
+    "name": "Market Shelter CF05",
+    "ward": 6,
+    "condition": 89,
+    "pop": 305,
+    "critical": 50,
+    "risk": "Medium",
+    "confidence": 85,
+    "cost": 0.3,
+    "cat": "sanitation",
+    "x": 24,
+    "y": 53,
+    "connections": [
+      "R11"
+    ],
+    "reports": 0,
+    "verified": "11 days ago",
+    "hazard": 10,
+    "action": "Schedule public facility upkeep",
+    "reason": [
+      [
+        "Community service",
+        16
+      ],
+      [
+        "Condition",
+        14
+      ],
+      [
+        "Population served",
+        12
+      ]
+    ]
+  },
+  {
+    "id": "CF06",
+    "type": "Public Facility",
+    "name": "Public Toilet CF06",
+    "ward": 1,
+    "condition": 94,
+    "pop": 346,
+    "critical": 54,
+    "risk": "Low",
+    "confidence": 88,
+    "cost": 0.52,
+    "cat": "sanitation",
+    "x": 41,
+    "y": 74,
+    "connections": [
+      "R26"
+    ],
+    "reports": 0,
+    "verified": "12 days ago",
+    "hazard": 18,
+    "action": "Schedule public facility upkeep",
+    "reason": [
+      [
+        "Community service",
+        16
+      ],
+      [
+        "Condition",
+        14
+      ],
+      [
+        "Population served",
+        12
+      ]
+    ]
+  },
+  {
+    "id": "CF07",
+    "type": "Public Facility",
+    "name": "Solid Waste Point CF07",
+    "ward": 2,
+    "condition": 67,
+    "pop": 387,
+    "critical": 58,
+    "risk": "Low",
+    "confidence": 91,
+    "cost": 0.74,
+    "cat": "sanitation",
+    "x": 58,
+    "y": 25,
+    "connections": [
+      "R03"
+    ],
+    "reports": 0,
+    "verified": "13 days ago",
+    "hazard": 26,
+    "action": "Schedule public facility upkeep",
+    "reason": [
+      [
+        "Community service",
+        16
+      ],
+      [
+        "Condition",
+        14
+      ],
+      [
+        "Population served",
+        12
+      ]
+    ]
+  },
+  {
+    "id": "CF08",
+    "type": "Public Facility",
+    "name": "Community Hall CF08",
+    "ward": 3,
+    "condition": 72,
+    "pop": 428,
+    "critical": 62,
+    "risk": "Low",
+    "confidence": 94,
+    "cost": 0.96,
+    "cat": "sanitation",
+    "x": 75,
+    "y": 46,
+    "connections": [
+      "R22"
+    ],
+    "reports": 0,
+    "verified": "14 days ago",
+    "hazard": 34,
+    "action": "Schedule public facility upkeep",
+    "reason": [
+      [
+        "Community service",
+        16
+      ],
+      [
+        "Condition",
+        14
+      ],
+      [
+        "Population served",
+        12
+      ]
+    ]
+  },
+  {
+    "id": "CF09",
+    "type": "Public Facility",
+    "name": "Market Shelter CF09",
+    "ward": 4,
+    "condition": 77,
+    "pop": 469,
+    "critical": 66,
+    "risk": "Low",
+    "confidence": 70,
+    "cost": 1.18,
+    "cat": "sanitation",
+    "x": 17,
+    "y": 67,
+    "connections": [
+      "R07"
+    ],
+    "reports": 0,
+    "verified": "15 days ago",
+    "hazard": 42,
+    "action": "Schedule public facility upkeep",
+    "reason": [
+      [
+        "Community service",
+        16
+      ],
+      [
+        "Condition",
+        14
+      ],
+      [
+        "Population served",
+        12
+      ]
+    ]
+  },
+  {
+    "id": "CF10",
+    "type": "Public Facility",
+    "name": "Public Toilet CF10",
+    "ward": 5,
+    "condition": 82,
+    "pop": 110,
+    "critical": 31,
+    "risk": "Medium",
+    "confidence": 73,
+    "cost": 0.3,
+    "cat": "sanitation",
+    "x": 34,
+    "y": 18,
+    "connections": [
+      "R24"
+    ],
+    "reports": 0,
+    "verified": "16 days ago",
+    "hazard": 10,
+    "action": "Schedule public facility upkeep",
+    "reason": [
+      [
+        "Community service",
+        16
+      ],
+      [
+        "Condition",
+        14
+      ],
+      [
+        "Population served",
+        12
+      ]
+    ]
+  },
+  {
+    "id": "CF11",
+    "type": "Public Facility",
+    "name": "Solid Waste Point CF11",
+    "ward": 6,
+    "condition": 87,
+    "pop": 151,
+    "critical": 35,
+    "risk": "Low",
+    "confidence": 76,
+    "cost": 0.52,
+    "cat": "sanitation",
+    "x": 51,
+    "y": 39,
+    "connections": [
+      "R11"
+    ],
+    "reports": 0,
+    "verified": "17 days ago",
+    "hazard": 18,
+    "action": "Schedule public facility upkeep",
+    "reason": [
+      [
+        "Community service",
+        16
+      ],
+      [
+        "Condition",
+        14
+      ],
+      [
+        "Population served",
+        12
+      ]
+    ]
+  },
+  {
+    "id": "CF12",
+    "type": "Public Facility",
+    "name": "Community Hall CF12",
+    "ward": 1,
+    "condition": 92,
+    "pop": 192,
+    "critical": 39,
+    "risk": "Low",
+    "confidence": 79,
+    "cost": 0.74,
+    "cat": "sanitation",
+    "x": 68,
+    "y": 60,
+    "connections": [
+      "R26"
+    ],
+    "reports": 0,
+    "verified": "18 days ago",
+    "hazard": 26,
+    "action": "Schedule public facility upkeep",
+    "reason": [
+      [
+        "Community service",
+        16
+      ],
+      [
+        "Condition",
+        14
+      ],
+      [
+        "Population served",
+        12
+      ]
+    ]
+  }
+]

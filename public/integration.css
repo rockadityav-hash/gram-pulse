@@ -1,0 +1,11 @@
+[hidden]{display:none!important}
+.aside-foot{position:static;margin:24px 4px 0;padding-bottom:14px}
+button:disabled{opacity:.55;cursor:wait}
+.input,.select{max-width:100%}
+.page,.card,.grid>*{min-width:0}
+.kpi .value,.ring span,.mini b,.budget-number,.brand small{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.report{overflow-wrap:anywhere}
+#accountLabel{max-width:170px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#whatAsset{width:100%}
+#management .table,#audit .table{min-width:580px}
+@media(max-width:760px){.topbar{height:auto;min-height:58px;flex-wrap:wrap;padding:10px 12px;gap:6px}.top-actions{gap:4px}.topbar .demo-tag{display:none}#collapseToggle{display:none}#accountLabel{max-width:96px;font-size:9px}.brand{font-size:14px}.top-actions .iconbtn{width:27px}.layout{width:100%}.shell.collapsed .layout{display:block}.grid.half .input{width:100%}.hero-side{min-width:0}.modal{overflow-wrap:anywhere}}

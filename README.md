@@ -1,0 +1,93 @@
+# GRAM-PULSE
+
+Full-stack conversion of the supplied HTML application. The original pages, green design system, SVG schematic map, dependency visualization, charts, forms, responsive layout, theme and command palette are retained. The original archive is not modified.
+
+## Quick start
+
+Requires Node.js 22.18+ (Node 24 recommended) and npm. Run these commands from this directory:
+
+```sh
+npm ci
+node scripts/setup.mjs
+npm run db:migrate
+npm run db:seed
+npm run build
+npm start
+```
+
+Open http://localhost:3000. `scripts/setup.mjs` generates a unique local demo password in `.env` and `LOCAL-CREDENTIALS.txt`. It never replaces existing configuration. Seed accounts are `admin@gram-pulse.demo`, `officer@gram-pulse.demo`, and `citizen@gram-pulse.demo`. Use the generated password, then change it through Account → Profile. These files are excluded from source control and the distribution ZIP.
+
+For development, run `npm run dev` after the initial build. After changing `public/api-client.ts`, run `npm run build` again. The existing frontend is plain JavaScript, not React; no frontend framework was introduced.
+
+## Persistence and architecture
+
+- Express 5 / TypeScript API with shared Zod schemas and a typed browser API client.
+- PostgreSQL relational tables, foreign keys, uniqueness/check constraints, indexes, transactions and versioned SQL migration. Domain attributes use validated JSONB; identities, ownership and inter-entity relationships use relational columns. The repository uses parameterized SQL rather than an ORM.
+- With no `DATABASE_URL`, PGlite runs actual PostgreSQL locally under `data/postgres`. It needs no database service or Docker. Run only one application process against an embedded data directory.
+- Set `DATABASE_URL` to a dedicated PostgreSQL database to use the `pg` adapter. Both adapters use the same schema. Standalone PostgreSQL deployment was not available for verification in this environment.
+- Uploaded images are decoded, size/pixel limited, stripped of metadata and re-encoded as WebP under `data/uploads`. They are served only to their owner, an assigned officer, or an administrator.
+- Only theme and sidebar preferences use localStorage. Mutations save to the API before success is shown. Queries refresh after mutations and every 20 seconds while idle. API outage blocks the application with a retry screen.
+- Hash routes preserve page selection on refresh. Unknown pages and unauthorized routes have explicit states.
+
+## What works
+
+- Session login/logout, profile/password changes, session revocation, citizen/officer/admin roles, CSRF and origin checks, scrypt password hashing, request limits and structured errors.
+- Asset CRUD, safe delete constraints, retirement, status/location/capacity/provenance editing. Wards can be edited; the demo has six configured wards.
+- Reports with real image uploads, rule-based classification, ownership filtering, officer assignment, verification, resolution, descriptions and deletion API. The same evidence updates criticality, confidence, Pulse and priorities.
+- Incident creation, status and resolution updates, affected-asset relations and historical records.
+- Dependency CRUD with relationship types and weights, search/filter/zoom/pan, directed RICE traversal, traces, map overlays, custom and compound scenarios, saved simulation history.
+- Budget optimization over persisted interventions with budget, project count, ward/category and priority constraints. Project lifecycle and user administration are in Data management.
+- What-if rainfall, population, condition and capacity changes; hypothetical roads/drains/water/facilities; relocation; before/after/delta metrics. Base records remain unchanged.
+- API-derived dashboard, charts, category health, reports, priorities, evidence confidence, search, notifications, audit log, decision brief and JSON export.
+- Asset, report, incident, user and audit lists expose paginated APIs. The village snapshot used for maps and live metrics loads the village model as a whole; this is designed for the supplied single-village dataset, not a district-scale inventory.
+
+## Demo dataset and walkthrough
+
+The seed includes 1 village, 6 wards, 3,000 residents, 650 households, 155 original assets, 56 reports, 15 historical incidents, 155 proposed interventions and 3 role accounts. It is explicitly **SIMULATED / DEMO DATA**, not official government information. Seeding is idempotent and never overwrites existing records.
+
+Sign in as admin. Open Dashboard → Digital Twin → inspect D04 → trace dependencies → Simulate D04 → inspect school/healthcare impacts → Priorities → Budget Planner → generate a ₹10 lakh plan → Citizen Portal → submit a report for D04 in Ward 4 → inspect updated evidence, priority and Pulse → Data Confidence. Use a citizen session to verify administrative operations are denied. Use an admin to assign a report to `officer`, then inspect it in an officer session.
+
+Settings “Reset demo data” removes only reports generated by the demo generator and clears the scenario/weights. It intentionally preserves user-created reports, assets and history. For an entirely fresh demo, configure a **new empty DATA_DIR or dedicated database**, migrate and seed it.
+
+## Calculations
+
+See `server/engines.ts` for pure, deterministic implementations.
+
+- Criticality is a configurable normalized sum of poor condition, population dependency, outgoing service dependencies, accessibility deficit, hazard/incident/scenario exposure and unresolved report evidence. All contributions are returned.
+- Confidence combines provenance, inspection evidence, verified report count and coordinate completeness. Simulated provenance is explicitly labeled even when other evidence increases confidence.
+- Pulse averages six category scores and subtracts bounded incident/report penalties. Category health uses asset condition, criticality and active scenario exposure. The UI explains the formula.
+- RICE respects relation direction, strength and impact weight; handles cycles; reports direct/propagated impacts and path depth. Population is the maximum exposed catchment within each ward, capped by that ward's population, then summed across wards. This limits overlap without pretending to have household-level survey data.
+- The budget engine uses an exact sparse 0/1 knapsack in rupees, with a Pareto frontier per project count. The objective combines population, criticality, risk reduction, service improvement and confidence. Infeasible constraints return a clear result.
+- What-if uses schematic distances, 5 km service catchments, capacity-weighted water supply and condition/hazard assumptions. These are transparent decision-support models, not calibrated engineering forecasts or trained AI.
+
+## Validation
+
+```sh
+npm run typecheck
+npm run lint
+npm run build
+npm test
+npx playwright install chromium
+# Start the app in another terminal first
+npm run test:ui
+```
+
+`npm test` uses an isolated database under `data/tests`, including restart persistence. Browser tests run against a running local demo and create named test records. `TEST_BASE_URL` overrides the browser URL; `PLAYWRIGHT_CHROMIUM_EXECUTABLE` can select an installed browser.
+
+TypeScript checks cover backend, shared models, API client and tests. Original renderers and their integration retain JavaScript; they are syntax-checked and exercised in browser tests, not claimed to be fully TypeScript-converted.
+
+## Deployment boundaries
+
+This is a functional local full-stack demo. It has not been publicly deployed, load-tested, penetration-tested, or validated against government GIS/engineering data. For deployment, configure PostgreSQL, HTTPS, `NODE_ENV=production`, the exact `APP_ORIGIN`, persistent private upload storage and backups. The application preserves legacy inline event handlers, so its CSP permits inline scripts/handlers; text is escaped and IDs/enums validated. A stricter CSP requires migrating those retained handlers. No cloud service, API key, satellite feed, AI classifier or official GIS connection is claimed.
+
+The UI's map remains the supplied schematic SVG experience; it has not been replaced with Leaflet or an official geospatial basemap. Multi-village tenancy, changing the six-ward topology, external identity providers, account recovery, and external notification delivery are outside this demo implementation.
+
+## Soft Meadow design layer (UI refresh)
+
+The interface was restyled without touching any server, API or data logic.
+
+- `public/theme.css` – generated design system: pastel palette, organic rounded cards, soft shadows, hand-drawn SVG doodles (embedded as data URIs), light + "night meadow" dark theme, responsive rules.
+- `public/enhance.js` – presentation/interaction layer: illustrated hero scene, SVG icons, count-up numbers, staggered entrance animations, ripple + leaf-burst feedback, mobile bottom navigation + swipe drawer, tables that become cards on phones, clickable KPI / health / plan / pulse elements.
+- Layout: desktop = floating glass top bar + rounded sidebar; tablet = slide-in drawer; phone = bottom tab bar with a centre "Report" button, bottom-sheet modals, card-style tables.
+- Fonts (Fraunces + Nunito) load from Google Fonts; the CSP in `server/app.ts` was widened for `fonts.googleapis.com` / `fonts.gstatic.com`. Offline, the UI falls back to system rounded fonts.
+- Motion respects `prefers-reduced-motion`.

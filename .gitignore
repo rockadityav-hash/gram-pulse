@@ -1,0 +1,8 @@
+node_modules/
+dist/
+data/
+.env
+LOCAL-CREDENTIALS.txt
+test-results/
+playwright-report/
+public/api-client.js

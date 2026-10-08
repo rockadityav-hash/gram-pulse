@@ -1,0 +1,40 @@
+{
+  "name": "gram-pulse",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch server/index.ts",
+    "start": "node dist/server/index.js",
+    "build": "tsc && node scripts/build.mjs && node --check public/app.js && node --check public/views.js",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint server shared tests public/api-client.ts",
+    "db:migrate": "tsx server/cli.ts migrate",
+    "db:seed": "tsx server/cli.ts seed",
+    "test": "tsx --test tests/*.test.ts",
+    "test:ui": "playwright test",
+    "setup": "node scripts/setup.mjs"
+  },
+  "dependencies": {
+    "@electric-sql/pglite": "^0.3.14",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.1.0",
+    "helmet": "^8.1.0",
+    "pg": "^8.16.3",
+    "zod": "^4.1.12",
+    "dotenv": "^17.2.3",
+    "sharp": "^0.34.4"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.7.0",
+    "@types/pg": "^8.15.5",
+    "typescript": "^5.9.3",
+    "tsx": "^4.20.6",
+    "eslint": "^9.37.0",
+    "typescript-eslint": "^8.46.0",
+    "@playwright/test": "^1.56.0",
+    "acorn": "^8.15.0",
+    "esbuild": "^0.25.10"
+  }
+}
